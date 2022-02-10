@@ -1,0 +1,579 @@
+header {
+  position: relative;
+}
+header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 18px 0;
+}
+header .header-logo-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+header .header-logo-image {
+  padding: 0 10px 0 0;
+}
+header .header-logo-heading {
+  width: 240px;
+  font-family: "lato";
+  font-size: 15px;
+  color: #505050;
+  font-weight: 900;
+}
+header .navbar {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar a {
+  color: #505050;
+  font-size: 14px;
+  font-family: "lato";
+  text-decoration: none;
+}
+header .navbar .navbar-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 13px;
+}
+header .navbar .navbar-top .top-link-info {
+  color: #505050;
+  font-size: 14px;
+  font-family: "lato";
+  text-decoration: none;
+  padding: 0 0 0 30px;
+}
+header .navbar .navbar-top .top-link-info-about {
+  color: #505050;
+  font-size: 14px;
+  font-family: "lato";
+  text-decoration: none;
+}
+header .navbar .navbar-top .top-link-section {
+  margin: 0 0 0 20px;
+}
+header .navbar .small-size-A {
+  font-family: "Fira sans";
+  font-weight: 900;
+  padding-top: 4px;
+  text-decoration: none;
+  color: #505050;
+  font-size: 11px;
+}
+header .navbar .medium-size-A {
+  font-size: 14px;
+  font-family: "Fira sans";
+  font-weight: 900;
+  padding-top: 2px;
+  padding-left: 12px;
+  text-decoration: none;
+  color: #505050;
+}
+header .navbar .large-size-A {
+  font-size: 16px;
+  font-family: "Fira sans";
+  font-weight: 900;
+  padding-left: 14px;
+  text-decoration: none;
+  color: #505050;
+}
+header .navbar .language {
+  margin: 0 0 0 20px;
+  font-family: "Fira sans";
+  font-size: 14px;
+  border-top: 0;
+  border-bottom: 0;
+  padding: 0 10px 0 10px;
+}
+header .blue-circle,
+header .green-circle,
+header .yellow-circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+header .blue-circle {
+  background-color: #265781;
+  margin: 1px 0 0 10px;
+}
+header .green-circle {
+  background-color: #52b27B;
+  margin: 1px 0 0 10px;
+}
+header .yellow-circle {
+  background-color: #F2e162;
+  margin: 1px 0 0 10px;
+}
+header .search-image {
+  margin: 0 0 0 10px;
+  padding: 0 0 0 10px;
+  border-left: 1px #265781 solid;
+}
+header .navbar-bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+header .navbar-bottom .bottom-link-content-home {
+  color: #505050;
+  font-size: 14px;
+  font-family: "lato";
+  padding: 0 9px 0 0px;
+}
+header .navbar-bottom .bottom-link-content {
+  color: #505050;
+  font-size: 14px;
+  font-family: "lato";
+  padding: 0px 9px 0px 9px;
+  border-left: 1px #265781 solid;
+}
+header .navbar-bottom .bottom-link-content-decisions {
+  color: #505050;
+  font-size: 14px;
+  font-family: "lato";
+  padding: 0 0 0 9px;
+  border-left: 1px #265781 solid;
+}
+
+.container {
+  width: 1125px;
+  margin: 0 auto;
+}
+
+.banner-image {
+  width: 100%;
+}
+
+.banner-section {
+  position: relative;
+}
+.banner-section .banner-heading-section {
+  position: absolute;
+  bottom: 90px;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.banner-section .banner-heading-section .main-heading {
+  background-color: #1b7642;
+  font-family: "lato";
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 57px;
+  padding: 0 20px 0px 20px;
+  margin: 0 0 0 0;
+}
+.banner-section .banner-heading-section .sub-heading {
+  background-color: #1b7642;
+  font-family: "lato";
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 35px;
+  padding: 16px 23px 16px 23px;
+  margin: 4px 0 0 0;
+}
+.banner-section .banner-heading-section .banner-button {
+  background-color: #ffffff;
+  color: #272727;
+  font-size: 22px;
+  font-family: "lato";
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  margin: 30px 0 0 0;
+}
+.banner-section .square-box {
+  display: flex;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.manage-develop-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 140px 0 0 0;
+  padding: 0 15px 0 59px;
+  max-width: 1125px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.manage-develop-section .irrigation-image-section {
+  display: flex;
+}
+.manage-develop-section .irrigation-image-section .manage-develop-main-text {
+  font-family: "Lato";
+  font-size: 43px;
+  color: #505050;
+  margin: 0 0 15px 0;
+  padding: 0 0 0 110px;
+}
+.manage-develop-section .irrigation-image-section .manage-develop-sub-text {
+  font-family: "Lato";
+  font-size: 43px;
+  color: #505050;
+  margin: 16px 0 0 0;
+  padding: 0 0 0 240px;
+}
+.manage-develop-section .irrigation-image-section .section2-logo-image {
+  margin-right: 60px;
+}
+.manage-develop-section .services-section {
+  background-image: linear-gradient(to bottom, #ffffff, #E6E6E6);
+  display: flex;
+  justify-content: center;
+  padding: 149px 0 121px 0;
+}
+.manage-develop-section .services-section .list-items {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+}
+.manage-develop-section .services-section .list-items .hydroirrigation,
+.manage-develop-section .services-section .list-items .hydroelectricity,
+.manage-develop-section .services-section .list-items .agriculturaldevelopment,
+.manage-develop-section .services-section .list-items .agriculturaldevelopment-2,
+.manage-develop-section .services-section .list-items .sprinkler {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.manage-develop-section .services-section .list-items .hydroirrigation,
+.manage-develop-section .services-section .list-items .hydroelectricity,
+.manage-develop-section .services-section .list-items .agriculturaldevelopment {
+  margin: 0 100px 0 0;
+}
+.manage-develop-section .services-section .list-items .sprinkler {
+  margin: 7px 0 0 120px;
+}
+.manage-develop-section .services-section .list-items .anchor-text {
+  width: 92px;
+  font-family: "lato";
+  font-size: 16px;
+  color: #505050;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 15px 0 0 0;
+}
+
+.section3 {
+  position: relative;
+  margin: 200px 0 0 0;
+  background-color: #3f3531;
+  height: 521px;
+}
+.section3 .container {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 145px;
+}
+.section3 .container .section3-bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 45px;
+}
+.section3 .container .section3-bg-container .play-button {
+  margin: 10px 440px 0 0;
+}
+.section3 .container .section3-bg-container .section3-main-heading {
+  color: #ffffff;
+  font-family: "Lato";
+  font-size: 36px;
+  width: 197px;
+}
+.section3 .container .section3-bg-container .section3-text {
+  color: #ffffff;
+  font-family: "Lato";
+  font-size: 16px;
+  width: 393px;
+}
+.section3 .container .section3-bg-container .section3-button {
+  background-color: #1b7642;
+  padding: 7px 15px 7px 15px;
+  color: #ffffff;
+  font-size: 22px;
+  font-family: "Lato";
+  border-width: 0px;
+}
+
+footer {
+  background-image: url("../images/footer-bg");
+  height: 512.35px;
+  width: 1280px;
+  background-size: cover;
+  margin-top: 80px;
+}
+footer .container {
+  display: flex;
+  flex-direction: row;
+}
+footer .container .footer-main-heading {
+  height: 27px;
+  width: 300px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Lato";
+  padding: 120px 0px 0px 80px;
+}
+footer .container .email-input {
+  height: 46px;
+  width: 571px;
+  padding-left: 80px;
+  display: inline;
+  color: #ffffff;
+}
+footer .container .input2 {
+  border-radius: 30px;
+  border-width: 0px;
+  height: 35px;
+  width: 550px;
+  color: #ffffff;
+  padding: 0px 0px 0px 15px;
+  border: 0px solid #707070;
+  background-color: #44af72;
+}
+footer .container .subscribe-button {
+  color: #272727;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border-width: 0px;
+  width: 191px;
+  height: 23px;
+  font-size: 16px;
+  font-family: "kunstler script";
+  position: relative;
+  left: 449px;
+  bottom: 29px;
+}
+footer .container .footer-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 558px;
+  height: 180px;
+  margin-left: 20px;
+}
+footer .container .footer-links-container h2 {
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Lato";
+  font-size: 18px;
+  padding-left: 60px;
+}
+footer .container .footer-links-container ul {
+  padding-bottom: 8px;
+}
+footer .container .footer-links-container ul li {
+  list-style-type: none;
+  color: #ffffff;
+  padding-left: 20px;
+  font-size: 14px;
+  font-family: "Lato";
+}
+footer .container .footer-links-container ul li .footer-link-list {
+  color: #ffffff;
+  font-family: "Lato";
+  font-size: 14px;
+  text-decoration: none;
+}
+footer .container .footer-links-container .footer-links-container-2 {
+  padding-top: 38px;
+}
+footer .container .information-container {
+  height: 375px;
+  width: 371px;
+  background-color: #44af72;
+  margin: 100px 60px 0px 0px;
+}
+footer .container .information-container .card-container {
+  height: 240px;
+  width: 335px;
+}
+footer .container .information-container .card-container .contact-details {
+  display: flex;
+  flex-direction: row;
+  height: 87px;
+  width: 283px;
+}
+footer .container .information-container .card-container .contact-details .location {
+  height: 24.38px;
+  width: 26.83px;
+  margin: 64px 0px 0px 20px;
+}
+footer .container .information-container .card-container .contact-details .addDiv .contact-heading {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: bold;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+footer .container .information-container .card-container .contact-details .addDiv .contact-Para {
+  color: #ffffff;
+  font-size: 14px;
+  width: 235px;
+  height: 61px;
+  padding: 8px 0px 10px 20px;
+}
+footer .container .information-container .card-container .contact-details .addDiv .hr2 {
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+  width: 252.25px;
+}
+footer .container .information-container .card-container .cellDiv {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+}
+footer .container .information-container .card-container .cellDiv .phone {
+  height: 26.38px;
+  width: 20.83px;
+  margin: 64px 0px 0px 20px;
+}
+footer .container .information-container .card-container .cellDiv .mobile-email-details {
+  margin-top: 15px;
+}
+footer .container .information-container .card-container .cellDiv .mobile-email-details .cell-email-heading {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: bold;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+footer .container .information-container .card-container .cellDiv .mobile-email-details .Cell-number {
+  color: #ffffff;
+  font-size: 14px;
+  width: 235px;
+  height: 61px;
+  padding: 8px 0px 10px 20px;
+}
+footer .container .information-container .card-container .cellDiv .mobile-email-details .hr1 {
+  position: relative;
+  bottom: 50px;
+  left: 20px;
+  width: 252.25px;
+}
+footer .container .information-container .card-container .EmailDiv {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 90px;
+}
+footer .container .information-container .card-container .EmailDiv .Email {
+  height: 26.38px;
+  width: 20.83px;
+  margin: 64px 0px 0px 20px;
+}
+footer .container .information-container .card-container .EmailDiv .mobile-email-details {
+  margin-top: 15px;
+}
+footer .container .information-container .card-container .EmailDiv .mobile-email-details .cell-email-heading {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: bold;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+footer .container .information-container .card-container .EmailDiv .mobile-email-details .Cell-number {
+  color: #ffffff;
+  font-size: 14px;
+  width: 235px;
+  height: 61px;
+  padding: 8px 0px 10px 20px;
+}
+footer .container .information-container .followUsDiv {
+  display: flex;
+  flex-direction: row;
+  width: 310px;
+  height: 26.5px;
+}
+footer .container .information-container .followUsDiv .fallow-head {
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Lato";
+  font-size: 18px;
+  padding: 60px 0px 0px 20px;
+}
+footer .container .information-container .followUsDiv .follow-line {
+  color: #ffffff;
+  font-size: 25px;
+  padding-left: 20px;
+  padding-top: 45px;
+}
+footer .container .information-container .followUsDiv .followUs-image-container {
+  margin-top: 57px;
+}
+footer .container .information-container .followUsDiv .followUs-image-container .followUsImg1 {
+  height: 13px;
+  width: 13px;
+  position: relative;
+  margin: 0px 0px 2px 11px;
+}
+footer .container .information-container .followUsDiv .followUs-image-container .followUsImg2 {
+  margin-left: 11px;
+}
+footer .copyright-details {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+}
+footer .copyright-details .copyright-text {
+  width: 477px;
+  height: 35px;
+  color: #ffffff;
+  position: relative;
+  bottom: 80px;
+  left: 80px;
+  font-size: 12px;
+  font-family: "lato";
+  font-weight: bold;
+}
+footer .copyright-details .powered-text {
+  height: 30px;
+  width: 107px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Lato";
+  color: #ffffff;
+  position: relative;
+  bottom: 50px;
+  left: 140px;
+}
+
+.powered-span {
+  position: absolute;
+  bottom: 40px;
+  left: 35px;
+}
+
+body {
+  margin: 0;
+}

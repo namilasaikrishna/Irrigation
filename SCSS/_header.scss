@@ -1,0 +1,138 @@
+header {
+    position: relative;
+    .container {
+        @include flex-properties(flex, row);
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 18px 0;
+    }
+    .header-logo-section {
+        @include flex-properties(flex, row);
+        align-items: center;
+        text-decoration: none;
+    }
+    .header-logo-image {
+        padding: 0 10px 0 0;
+    }
+    .header-logo-heading {
+        width: 240px;
+        font-family: $family;
+        font-size: 15px;
+        color: $color-dark;
+        font-weight: $weight;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        a {
+            color: $color-dark;
+            font-size: 14px;
+            font-family: $family;
+            text-decoration: none;
+        }
+        .navbar-top {
+            @include flex-properties(flex, row);
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 13px;
+            .top-link-info {
+                color: $color-dark;
+                font-size: 14px;
+                font-family: $family;
+                text-decoration: none;
+                padding: 0 0 0 30px;
+            }
+            .top-link-info-about {
+                color: $color-dark;
+                font-size: 14px;
+                font-family: $family;
+                text-decoration: none;
+            }
+            .top-link-section {
+                margin: 0 0 0 20px;
+            }
+        }
+        .small-size-A {
+            font-family: "Fira sans";
+            font-weight: $weight;
+            padding-top: 4px;
+            text-decoration: none;
+            color: $color-dark;
+            font-size: 11px;
+        }
+        .medium-size-A {
+            font-size: 14px;
+            font-family: "Fira sans";
+            font-weight: $weight;
+            padding-top: 2px;
+            padding-left: 12px;
+            text-decoration: none;
+            color: $color-dark;
+        }
+        .large-size-A {
+            font-size: 16px;
+            font-family: "Fira sans";
+            font-weight: $weight;
+            padding-left: 14px;
+            text-decoration: none;
+            color: $color-dark;
+        }
+        .language {
+            margin: 0 0 0 20px;
+            font-family: "Fira sans";
+            font-size: 14px;
+            border-top: 0;
+            border-bottom: 0;
+            padding: 0 10px 0 10px;
+        }
+    }
+    .blue-circle,
+    .green-circle,
+    .yellow-circle {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+    }
+    .blue-circle {
+        background-color: $color-blue;
+        margin: 1px 0 0 10px;
+    }
+    .green-circle {
+        background-color: $color-green;
+        margin: 1px 0 0 10px;
+    }
+    .yellow-circle {
+        background-color: $color-yellow;
+        margin: 1px 0 0 10px;
+    }
+    .search-image {
+        margin: 0 0 0 10px;
+        padding: 0 0 0 10px;
+        border-left: 1px $color-blue solid;
+    }
+    .navbar-bottom {
+        display: flex;
+        justify-content: flex-end;
+        .bottom-link-content-home {
+            color: $color-dark;
+            font-size: 14px;
+            font-family: $family;
+            padding: 0 9px 0 0px;
+        }
+        .bottom-link-content {
+            color: $color-dark;
+            font-size: 14px;
+            font-family: $family;
+            padding: 0px 9px 0px 9px;
+            border-left: 1px $color-blue solid;
+        }
+        .bottom-link-content-decisions {
+            color: $color-dark;
+            font-size: 14px;
+            font-family: $family;
+            padding: 0 0 0 9px;
+            border-left: 1px $color-blue solid;
+        }
+    }
+}

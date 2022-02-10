@@ -1,0 +1,175 @@
+.container {
+    width: 1125px;
+    margin: 0 auto;
+}
+
+.banner-image {
+    width: 100%;
+}
+
+.banner-section {
+    position: $relative;
+    .banner-heading-section {
+        position: $absolute;
+        bottom: 90px;
+        right: 0;
+        left: 0;
+        @include flex-properties(flex, column);
+        justify-content: space-between;
+        align-items: flex-start;
+        .main-heading {
+            background-color: $dark-green;
+            font-family: $family;
+            font-weight: $weight;
+            color: $color-white;
+            font-size: 57px;
+            padding: 0 20px 0px 20px;
+            margin: 0 0 0 0;
+        }
+        .sub-heading {
+            background-color: $dark-green;
+            font-family: $family;
+            font-weight: $weight;
+            color: $color-white;
+            font-size: 35px;
+            padding: 16px 23px 16px 23px;
+            margin: 4px 0 0 0;
+        }
+        .banner-button {
+            background-color: $color-white;
+            color: #272727;
+            font-size: 22px;
+            font-family: $family;
+            text-decoration: none;
+            padding: 10px 20px 10px 20px;
+            margin: 30px 0 0 0;
+        }
+    }
+    .square-box {
+        display: flex;
+        position: $absolute;
+        bottom: -30px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.manage-develop-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 140px 0 0 0;
+    padding: 0 15px 0 59px;
+    max-width: 1125px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    .irrigation-image-section {
+        display: flex;
+        .manage-develop-main-text {
+            font-family: "Lato";
+            font-size: 43px;
+            color: #505050;
+            margin: 0 0 15px 0;
+            padding: 0 0 0 110px;
+        }
+        .manage-develop-sub-text {
+            font-family: "Lato";
+            font-size: 43px;
+            color: #505050;
+            margin: 16px 0 0 0;
+            padding: 0 0 0 240px;
+        }
+        .section2-logo-image {
+            margin-right: 60px;
+        }
+    }
+    .services-section {
+        background-image: linear-gradient(to bottom, #ffffff, #E6E6E6);
+        display: flex;
+        justify-content: center;
+        padding: 149px 0 121px 0;
+        .list-items {
+            list-style-type: none;
+            display: flex;
+            padding-left: 0;
+            .hydroirrigation,
+            .hydroelectricity,
+            .agriculturaldevelopment,
+            .agriculturaldevelopment-2,
+            .sprinkler {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+            }
+            .hydroirrigation,
+            .hydroelectricity,
+            .agriculturaldevelopment {
+                margin: 0 100px 0 0;
+            }
+            .sprinkler {
+                margin: 7px 0 0 120px;
+            }
+            .anchor-text {
+                width: 92px;
+                font-family: "lato";
+                font-size: 16px;
+                color: #505050;
+                text-decoration: none;
+                font-weight: 700;
+                padding: 15px 0 0 0;
+            }
+        }
+    }
+}
+
+.section3 {
+    position: relative;
+    margin: 200px 0 0 0;
+    background-color: #3f3531;
+    height: 521px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 145px;
+        .section3-bg-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 45px;
+            .play-button {
+                margin: 10px 440px 0 0;
+            }
+            .section3-main-heading {
+                color: #ffffff;
+                font-family: "Lato";
+                font-size: 36px;
+                width: 197px;
+            }
+            .section3-text {
+                color: #ffffff;
+                font-family: "Lato";
+                font-size: 16px;
+                width: 393px;
+            }
+            .section3-button {
+                background-color: #1b7642;
+                padding: 7px 15px 7px 15px;
+                color: #ffffff;
+                font-size: 22px;
+                font-family: "Lato";
+                border-width: 0px;
+            }
+        }
+    }
+}
