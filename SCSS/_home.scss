@@ -61,8 +61,8 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 140px 0 0 0;
-    padding: 0 15px 0 59px;
+    margin-top: 130px !important;
+    padding: 0 0 0 69px !important;
     max-width: 1125px;
     width: 100%;
     margin: 0 auto;
@@ -76,6 +76,20 @@
             margin: 0 0 15px 0;
             padding: 0 0 0 110px;
         }
+        .irrigation-image {
+            margin: 0;
+            font-size: 7rem;
+            font-weight: 900;
+            padding: 0;
+            line-height: 1;
+            background-image: url(../images/banner);
+            font-family: sans-serif;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-size: cover;
+            background-position: 1rem -6rem;
+        }
         .manage-develop-sub-text {
             font-family: "Lato";
             font-size: 43px;
@@ -84,7 +98,7 @@
             padding: 0 0 0 240px;
         }
         .section2-logo-image {
-            margin-right: 60px;
+            margin-right: 70px;
         }
     }
     .services-section {
@@ -95,24 +109,15 @@
         .list-items {
             list-style-type: none;
             display: flex;
+            justify-content: space-around;
             padding-left: 0;
-            .hydroirrigation,
-            .hydroelectricity,
-            .agriculturaldevelopment,
-            .agriculturaldevelopment-2,
-            .sprinkler {
+            margin: 0;
+            .items {
+                text-align: center;
+                margin: 0 77px 0 20px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                text-align: center;
-            }
-            .hydroirrigation,
-            .hydroelectricity,
-            .agriculturaldevelopment {
-                margin: 0 100px 0 0;
-            }
-            .sprinkler {
-                margin: 7px 0 0 120px;
             }
             .anchor-text {
                 width: 92px;

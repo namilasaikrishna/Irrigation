@@ -6,12 +6,12 @@ header {
         align-items: center;
         padding: 0 0 18px 0;
     }
-    .header-logo-section {
+    .container__header-logo-section {
         @include flex-properties(flex, row);
         align-items: center;
         text-decoration: none;
     }
-    .header-logo-image {
+    &__header-logo-image {
         padding: 0 10px 0 0;
     }
     .header-logo-heading {

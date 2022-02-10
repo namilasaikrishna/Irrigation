@@ -8,13 +8,13 @@ header .container {
   align-items: center;
   padding: 0 0 18px 0;
 }
-header .header-logo-section {
+header .container__header-logo-section {
   display: flex;
   flex-direction: row;
   align-items: center;
   text-decoration: none;
 }
-header .header-logo-image {
+header__header-logo-image {
   padding: 0 10px 0 0;
 }
 header .header-logo-heading {
@@ -204,8 +204,8 @@ header .navbar-bottom .bottom-link-content-decisions {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 140px 0 0 0;
-  padding: 0 15px 0 59px;
+  margin-top: 130px !important;
+  padding: 0 0 0 69px !important;
   max-width: 1125px;
   width: 100%;
   margin: 0 auto;
@@ -221,6 +221,20 @@ header .navbar-bottom .bottom-link-content-decisions {
   margin: 0 0 15px 0;
   padding: 0 0 0 110px;
 }
+.manage-develop-section .irrigation-image-section .irrigation-image {
+  margin: 0;
+  font-size: 7rem;
+  font-weight: 900;
+  padding: 0;
+  line-height: 1;
+  background-image: url(../images/banner);
+  font-family: sans-serif;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: cover;
+  background-position: 1rem -6rem;
+}
 .manage-develop-section .irrigation-image-section .manage-develop-sub-text {
   font-family: "Lato";
   font-size: 43px;
@@ -229,7 +243,7 @@ header .navbar-bottom .bottom-link-content-decisions {
   padding: 0 0 0 240px;
 }
 .manage-develop-section .irrigation-image-section .section2-logo-image {
-  margin-right: 60px;
+  margin-right: 70px;
 }
 .manage-develop-section .services-section {
   background-image: linear-gradient(to bottom, #ffffff, #E6E6E6);
@@ -240,25 +254,16 @@ header .navbar-bottom .bottom-link-content-decisions {
 .manage-develop-section .services-section .list-items {
   list-style-type: none;
   display: flex;
+  justify-content: space-around;
   padding-left: 0;
+  margin: 0;
 }
-.manage-develop-section .services-section .list-items .hydroirrigation,
-.manage-develop-section .services-section .list-items .hydroelectricity,
-.manage-develop-section .services-section .list-items .agriculturaldevelopment,
-.manage-develop-section .services-section .list-items .agriculturaldevelopment-2,
-.manage-develop-section .services-section .list-items .sprinkler {
+.manage-develop-section .services-section .list-items .items {
+  text-align: center;
+  margin: 0 77px 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: center;
-}
-.manage-develop-section .services-section .list-items .hydroirrigation,
-.manage-develop-section .services-section .list-items .hydroelectricity,
-.manage-develop-section .services-section .list-items .agriculturaldevelopment {
-  margin: 0 100px 0 0;
-}
-.manage-develop-section .services-section .list-items .sprinkler {
-  margin: 7px 0 0 120px;
 }
 .manage-develop-section .services-section .list-items .anchor-text {
   width: 92px;
