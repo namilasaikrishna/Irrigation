@@ -144,9 +144,9 @@
     }
 }
 
-.section3 {
+.about-vidc-section {
     position: relative;
-    margin: 100px 0 0 0;
+    margin: 20px 0 0 0;
     background-color: #3f3531;
     height: 521px;
     .container {
@@ -156,7 +156,7 @@
         top: 90px;
         left: 0;
         right: 145px;
-        .section3-bg-container {
+        .nature-section {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -167,19 +167,19 @@
             .play-button {
                 margin: 10px 440px 0 0;
             }
-            .section3-main-heading {
+            .about-vidc-main-heading {
                 color: #ffffff;
                 font-family: "Lato";
                 font-size: 36px;
                 width: 197px;
             }
-            .section3-text {
+            .about-vidc-text {
                 color: #ffffff;
                 font-family: "Lato";
                 font-size: 16px;
                 width: 393px;
             }
-            .section3-button {
+            .about-vidc-button {
                 background-color: #1b7642;
                 padding: 7px 15px 7px 15px;
                 color: #ffffff;
