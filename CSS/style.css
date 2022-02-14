@@ -2,11 +2,15 @@ header {
   position: relative;
 }
 header .container {
+  max-width: 1125px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 18px 0;
+  padding: 18px 15px 20px 15px;
 }
 header .container__header-logo-section {
   display: flex;
@@ -14,51 +18,54 @@ header .container__header-logo-section {
   align-items: center;
   text-decoration: none;
 }
-header__header-logo-image {
+
+header .container__header-logo-image {
   padding: 0 10px 0 0;
 }
-header .header-logo-heading {
+
+.header-logo-heading {
   width: 240px;
   font-family: "lato";
   font-size: 15px;
   color: #505050;
   font-weight: 900;
 }
-header .navbar {
+
+header .container__navbar {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
-header .navbar a {
+header .container__navbar a {
   color: #505050;
   font-size: 14px;
   font-family: "lato";
   text-decoration: none;
 }
-header .navbar .navbar-top {
+header .container__navbar .navbar-top {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 13px;
 }
-header .navbar .navbar-top .top-link-info {
+header .container__navbar .navbar-top .top-link-info {
   color: #505050;
   font-size: 14px;
   font-family: "lato";
   text-decoration: none;
   padding: 0 0 0 30px;
 }
-header .navbar .navbar-top .top-link-info-about {
+header .container__navbar .navbar-top .top-link-info-about {
   color: #505050;
   font-size: 14px;
   font-family: "lato";
   text-decoration: none;
 }
-header .navbar .navbar-top .top-link-section {
+header .container__navbar .navbar-top .top-link-section {
   margin: 0 0 0 20px;
 }
-header .navbar .small-size-A {
+header .container__navbar .small-size-A {
   font-family: "Fira sans";
   font-weight: 900;
   padding-top: 4px;
@@ -66,7 +73,7 @@ header .navbar .small-size-A {
   color: #505050;
   font-size: 11px;
 }
-header .navbar .medium-size-A {
+header .container__navbar .medium-size-A {
   font-size: 14px;
   font-family: "Fira sans";
   font-weight: 900;
@@ -75,7 +82,7 @@ header .navbar .medium-size-A {
   text-decoration: none;
   color: #505050;
 }
-header .navbar .large-size-A {
+header .container__navbar .large-size-A {
   font-size: 16px;
   font-family: "Fira sans";
   font-weight: 900;
@@ -83,7 +90,7 @@ header .navbar .large-size-A {
   text-decoration: none;
   color: #505050;
 }
-header .navbar .language {
+header .container__navbar .language {
   margin: 0 0 0 20px;
   font-family: "Fira sans";
   font-size: 14px;
@@ -91,48 +98,52 @@ header .navbar .language {
   border-bottom: 0;
   padding: 0 10px 0 10px;
 }
-header .blue-circle,
-header .green-circle,
-header .yellow-circle {
+
+header .container__blue-circle, header .container__green-circle, header .container__yellow-circle {
   height: 15px;
   width: 15px;
   border-radius: 50%;
 }
-header .blue-circle {
+
+header .container__blue-circle {
   background-color: #265781;
   margin: 1px 0 0 10px;
 }
-header .green-circle {
+
+header .container__green-circle {
   background-color: #52b27B;
   margin: 1px 0 0 10px;
 }
-header .yellow-circle {
+
+header .container__yellow-circle {
   background-color: #F2e162;
   margin: 1px 0 0 10px;
 }
-header .search-image {
+
+header .container__search-image {
   margin: 0 0 0 10px;
   padding: 0 0 0 10px;
   border-left: 1px #265781 solid;
 }
-header .navbar-bottom {
+
+.navbar-bottom {
   display: flex;
   justify-content: flex-end;
 }
-header .navbar-bottom .bottom-link-content-home {
+.navbar-bottom .bottom-link-content-home {
   color: #505050;
   font-size: 14px;
   font-family: "lato";
   padding: 0 9px 0 0px;
 }
-header .navbar-bottom .bottom-link-content {
+.navbar-bottom .bottom-link-content {
   color: #505050;
   font-size: 14px;
   font-family: "lato";
   padding: 0px 9px 0px 9px;
   border-left: 1px #265781 solid;
 }
-header .navbar-bottom .bottom-link-content-decisions {
+.navbar-bottom .bottom-link-content-decisions {
   color: #505050;
   font-size: 14px;
   font-family: "lato";
@@ -201,11 +212,9 @@ header .navbar-bottom .bottom-link-content-decisions {
 }
 
 .manage-develop-section {
-  display: flex;
-  flex-direction: column;
   position: relative;
-  margin-top: 130px !important;
-  padding: 0 0 0 69px !important;
+  margin-top: 136px !important;
+  padding: 0 0 0 85px !important;
   max-width: 1125px;
   width: 100%;
   margin: 0 auto;
@@ -213,71 +222,90 @@ header .navbar-bottom .bottom-link-content-decisions {
 }
 .manage-develop-section .irrigation-image-section {
   display: flex;
+  flex-direction: row;
 }
 .manage-develop-section .irrigation-image-section .manage-develop-main-text {
-  font-family: "Lato";
+  font-family: "lato";
   font-size: 43px;
   color: #505050;
-  margin: 0 0 15px 0;
-  padding: 0 0 0 110px;
+  margin: 0 0 0 0;
+  padding: 0 0 3px 120px;
+  font-weight: 900;
 }
 .manage-develop-section .irrigation-image-section .irrigation-image {
-  margin: 0;
-  font-size: 7rem;
+  margin: 0 0 0 0;
+  font-size: 131px;
   font-weight: 900;
   padding: 0;
-  line-height: 1;
   background-image: url(../images/banner);
-  font-family: sans-serif;
+  font-family: "sans-serif";
   color: transparent;
+  line-height: 1;
   -webkit-background-clip: text;
   background-clip: text;
   background-size: cover;
-  background-position: 1rem -6rem;
+  background-position: 22rem -11rem;
 }
 .manage-develop-section .irrigation-image-section .manage-develop-sub-text {
-  font-family: "Lato";
+  font-family: "lato";
   font-size: 43px;
   color: #505050;
-  margin: 16px 0 0 0;
-  padding: 0 0 0 240px;
+  padding: 3px 0 0 380px;
+  margin: 0 0 0 0;
+  font-weight: 900;
 }
-.manage-develop-section .irrigation-image-section .section2-logo-image {
-  margin-right: 70px;
+.manage-develop-section .irrigation-image-section .irrigation-logo-image {
+  position: absolute;
+  right: -15px;
+  top: 10px;
 }
-.manage-develop-section .services-section {
-  background-image: linear-gradient(to bottom, #ffffff, #E6E6E6);
+
+.services-section {
+  background-image: linear-gradient(to bottom, #ffffff, #f8f8f8);
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  padding: 149px 0 121px 0;
+  padding: 121px 0 100px 100px;
 }
-.manage-develop-section .services-section .list-items {
+.services-section .service-items {
   list-style-type: none;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   padding-left: 0;
   margin: 0;
 }
-.manage-develop-section .services-section .list-items .items {
+.services-section .service-items .items {
   text-align: center;
-  margin: 0 77px 0 20px;
+  margin: 0 77px 0 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.manage-develop-section .services-section .list-items .anchor-text {
-  width: 92px;
+.services-section .service-items .logo {
+  height: 75px;
+  width: 75px;
+}
+.services-section .service-items .sprinkler-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0;
+}
+.services-section .service-items .anchor-text {
+  width: 120px;
   font-family: "lato";
   font-size: 16px;
   color: #505050;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 900;
   padding: 15px 0 0 0;
 }
 
 .section3 {
   position: relative;
-  margin: 200px 0 0 0;
+  margin: 100px 0 0 0;
   background-color: #3f3531;
   height: 521px;
 }

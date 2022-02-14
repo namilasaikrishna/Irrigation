@@ -1,6 +1,6 @@
 .container {
     width: 1125px;
-    margin: 0 auto;
+    margin: 0 $auto;
 }
 
 .banner-image {
@@ -14,9 +14,9 @@
         bottom: 90px;
         right: 0;
         left: 0;
-        @include flex-properties(flex, column);
-        justify-content: space-between;
-        align-items: flex-start;
+        @include flex-properties($flex, $column-direction);
+        justify-content: $space-between;
+        align-items: $start;
         .main-heading {
             background-color: $dark-green;
             font-family: $family;
@@ -37,104 +37,116 @@
         }
         .banner-button {
             background-color: $color-white;
-            color: #272727;
+            color: $color-balck;
             font-size: 22px;
             font-family: $family;
-            text-decoration: none;
+            text-decoration: $none;
             padding: 10px 20px 10px 20px;
             margin: 30px 0 0 0;
         }
     }
     .square-box {
-        display: flex;
+        display: $flex;
         position: $absolute;
         bottom: -30px;
         left: 0;
         right: 0;
-        margin: 0 auto;
-        justify-content: center;
-        align-items: center;
+        margin: 0 $auto;
+        justify-content: $center;
+        align-items: $center;
     }
 }
 
 .manage-develop-section {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-top: 130px !important;
-    padding: 0 0 0 69px !important;
+    position: $relative;
+    margin-top: 136px !important;
+    padding: 0 0 0 85px !important;
     max-width: 1125px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 $auto;
     padding: 0 15px;
     .irrigation-image-section {
-        display: flex;
+        @include flex-properties($flex, $row-direction);
         .manage-develop-main-text {
-            font-family: "Lato";
+            font-family: $family;
             font-size: 43px;
-            color: #505050;
-            margin: 0 0 15px 0;
-            padding: 0 0 0 110px;
+            color: $color-dark;
+            margin: 0 0 0 0;
+            padding: 0 0 3px 120px;
+            font-weight: $weight;
         }
         .irrigation-image {
-            margin: 0;
-            font-size: 7rem;
-            font-weight: 900;
+            margin: 0 0 0 0;
+            font-size: 131px;
+            font-weight: $weight;
             padding: 0;
-            line-height: 1;
             background-image: url(../images/banner);
-            font-family: sans-serif;
+            font-family: $sansserif-family;
             color: transparent;
+            line-height: 1;
             -webkit-background-clip: text;
             background-clip: text;
             background-size: cover;
-            background-position: 1rem -6rem;
+            background-position: 22rem -11rem;
         }
         .manage-develop-sub-text {
-            font-family: "Lato";
+            font-family: $family;
             font-size: 43px;
-            color: #505050;
-            margin: 16px 0 0 0;
-            padding: 0 0 0 240px;
+            color: $color-dark;
+            padding: 3px 0 0 380px;
+            margin: 0 0 0 0;
+            font-weight: $weight;
         }
-        .section2-logo-image {
-            margin-right: 70px;
+        .irrigation-logo-image {
+            position: $absolute;
+            right: -15px;
+            top: 10px;
         }
     }
-    .services-section {
-        background-image: linear-gradient(to bottom, #ffffff, #E6E6E6);
-        display: flex;
-        justify-content: center;
-        padding: 149px 0 121px 0;
-        .list-items {
-            list-style-type: none;
-            display: flex;
-            justify-content: space-around;
-            padding-left: 0;
-            margin: 0;
-            .items {
-                text-align: center;
-                margin: 0 77px 0 20px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-            }
-            .anchor-text {
-                width: 92px;
-                font-family: "lato";
-                font-size: 16px;
-                color: #505050;
-                text-decoration: none;
-                font-weight: 700;
-                padding: 15px 0 0 0;
-            }
+}
+
+.services-section {
+    background-image: linear-gradient(to bottom, #ffffff, #f8f8f8);
+    @include flex-properties($flex, $row-direction);
+    justify-content: $center;
+    padding: 121px 0 100px 100px;
+    .service-items {
+        list-style-type: $none;
+        @include flex-properties($flex, $row-direction);
+        justify-content: $space-around;
+        align-items: $center;
+        padding-left: 0;
+        margin: 0;
+        .items {
+            text-align: $center;
+            margin: 0 77px 0 0;
+            @include flex-properties($flex, $column-direction);
+            justify-content: $space-between;
+        }
+        .logo {
+            height: 75px;
+            width: 75px;
+        }
+        .sprinkler-item {
+            text-align: $center;
+            @include flex-properties($flex, $column-direction);
+            margin-right: 0;
+        }
+        .anchor-text {
+            width: 120px;
+            font-family: $family;
+            font-size: 16px;
+            color: $color-dark;
+            text-decoration: $none;
+            font-weight: $weight;
+            padding: 15px 0 0 0;
         }
     }
 }
 
 .section3 {
     position: relative;
-    margin: 200px 0 0 0;
+    margin: 100px 0 0 0;
     background-color: #3f3531;
     height: 521px;
     .container {
