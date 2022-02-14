@@ -222,9 +222,10 @@ header .container__search-image {
 }
 .manage-develop-section .irrigation-image-section {
   display: flex;
+  flex-direction: row;
 }
 .manage-develop-section .irrigation-image-section .manage-develop-main-text {
-  font-family: "Lato";
+  font-family: "lato";
   font-size: 43px;
   color: #505050;
   margin: 0 0 0 0;
@@ -237,7 +238,7 @@ header .container__search-image {
   font-weight: 900;
   padding: 0;
   background-image: url(../images/banner);
-  font-family: sans-serif;
+  font-family: "sans-serif";
   color: transparent;
   line-height: 1;
   -webkit-background-clip: text;
@@ -246,7 +247,7 @@ header .container__search-image {
   background-position: 22rem -11rem;
 }
 .manage-develop-section .irrigation-image-section .manage-develop-sub-text {
-  font-family: "Lato";
+  font-family: "lato";
   font-size: 43px;
   color: #505050;
   padding: 3px 0 0 380px;
@@ -262,12 +263,14 @@ header .container__search-image {
 .services-section {
   background-image: linear-gradient(to bottom, #ffffff, #f8f8f8);
   display: flex;
+  flex-direction: row;
   justify-content: center;
   padding: 121px 0 100px 100px;
 }
 .services-section .service-items {
   list-style-type: none;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   padding-left: 0;
