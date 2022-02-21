@@ -134,27 +134,28 @@
 }
 
 .about-us {
-    position: relative;
+    position: $relative;
     background-color: #3f3531;
     height: 521px;
     &__container {
         display: flex;
-        justify-content: space-between;
-        position: absolute;
+        justify-content: space-around;
+        position: $absolute;
         top: 90px;
         right: 0;
         left: 0;
         max-width: 1125px;
         width: 100%;
         margin: 0 $auto;
+        margin: 0 0 0 107px;
     }
     &__nature-section {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: $center;
+        align-items: $center;
     }
     &__play-button {
-        position: absolute;
+        position: $absolute;
         display: flex;
         align-items: $center;
         justify-content: $center;
@@ -170,16 +171,19 @@
         border-width: 0px;
         text-decoration: none;
         display: inline-block;
+        &:hover {
+            color: blue;
+        }
     }
     &__text {
         color: #ffffff;
-        font-family: "Lato";
+        font-family: $family;
         font-size: 16px;
         margin: 15px 0 30px 0;
     }
     &__main-heading {
         color: #ffffff;
-        font-family: "Lato";
+        font-family: $family;
         font-weight: $weight;
         font-size: 36px;
         margin: 0;
@@ -188,7 +192,7 @@
         width: 395px;
     }
     &__bg-white-image {
-        width: 477px;
-        height: 521px;
+        width: 30%;
+        height: 100%;
     }
 }

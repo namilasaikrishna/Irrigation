@@ -1,13 +1,12 @@
 .grass-image {
     width: 100%;
-    @include flex-properties(flex, row);
+    display: block;
     margin-top: 84px;
 }
 
 .footer {
-    width: 100%;
     background-color: #1B7642;
-    height: 414px;
+    height: 416px;
     &__container {
         max-width: 1125px;
         width: 100%;
@@ -36,6 +35,7 @@
     &__subscribe-input {
         width: 672px;
         height: 46px;
+        color: $color-white;
         background-color: #186a3b;
         border-radius: 30px;
         border-style: $none;
@@ -50,10 +50,9 @@
         font-size: 16px;
         font-weight: 700;
         padding: 10px 30px;
-        font-family: "Kunstler Script";
         top: 46px;
-        right: 32px;
-        text-decoration: $none;
+        right: 36px;
+        border-style: none;
     }
     &__links-info {
         @include flex-properties(flex, row);
