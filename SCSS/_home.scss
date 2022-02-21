@@ -137,10 +137,6 @@
     position: relative;
     background-color: #3f3531;
     height: 521px;
-    &__bg-white-image {
-        width: 32%;
-        height: 100%;
-    }
     &__container {
         display: flex;
         justify-content: space-between;
@@ -160,8 +156,8 @@
     &__play-button {
         position: absolute;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: $center;
+        justify-content: $center;
         height: 80px;
         width: 80px;
     }
@@ -170,7 +166,7 @@
         padding: 7px 15px 7px 15px;
         color: #ffffff;
         font-size: 22px;
-        font-family: "Lato";
+        font-family: $family;
         border-width: 0px;
         text-decoration: none;
         display: inline-block;
@@ -189,6 +185,10 @@
         margin: 0;
     }
     &__content-section {
-        width: 393px;
+        width: 395px;
+    }
+    &__bg-white-image {
+        width: 477px;
+        height: 521px;
     }
 }

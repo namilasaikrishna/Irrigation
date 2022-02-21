@@ -283,10 +283,6 @@ header .container .navbar-bottom .bottom-link-content-decisions {
   background-color: #3f3531;
   height: 521px;
 }
-.about-us__bg-white-image {
-  width: 32%;
-  height: 100%;
-}
 .about-us__container {
   display: flex;
   justify-content: space-between;
@@ -316,7 +312,7 @@ header .container .navbar-bottom .bottom-link-content-decisions {
   padding: 7px 15px 7px 15px;
   color: #ffffff;
   font-size: 22px;
-  font-family: "Lato";
+  font-family: "lato";
   border-width: 0px;
   text-decoration: none;
   display: inline-block;
@@ -335,7 +331,11 @@ header .container .navbar-bottom .bottom-link-content-decisions {
   margin: 0;
 }
 .about-us__content-section {
-  width: 393px;
+  width: 395px;
+}
+.about-us__bg-white-image {
+  width: 477px;
+  height: 521px;
 }
 
 .grass-image {
