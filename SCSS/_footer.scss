@@ -1,258 +1,213 @@
-footer {
-    background-image: url("../images/footer-bg");
-    height: 512.35px;
-    width: 1280px;
-    background-size: cover;
-    margin-top: 80px;
-    .container {
-        display: flex;
-        flex-direction: row;
-        .footer-main-heading {
-            height: 27px;
-            width: 300px;
-            color: #ffffff;
-            font-size: 22px;
-            font-weight: bold;
-            font-family: "Lato";
-            padding: 120px 0px 0px 80px;
-        }
-        .email-input {
-            height: 46px;
-            width: 571px;
-            padding-left: 80px;
-            display: inline;
-            color: #ffffff;
-        }
-        .input2 {
-            border-radius: 30px;
-            border-width: 0px;
-            height: 35px;
-            width: 550px;
-            color: #ffffff;
-            padding: 0px 0px 0px 15px;
-            border: 0px solid #707070;
-            background-color: #44af72;
-        }
-        .subscribe-button {
-            color: #272727;
-            background-color: #ffffff;
-            border-radius: 20px;
-            border-width: 0px;
-            width: 191px;
-            height: 23px;
-            font-size: 16px;
-            font-family: "kunstler script";
-            position: relative;
-            left: 449px;
-            bottom: 29px;
-        }
-        .footer-links-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            width: 558px;
-            height: 180px;
-            margin-left: 20px;
-            h2 {
-                color: #ffffff;
-                font-weight: bold;
-                font-family: "Lato";
-                font-size: 18px;
-                padding-left: 60px;
-            }
-            ul {
-                padding-bottom: 8px;
-                li {
-                    list-style-type: none;
-                    color: #ffffff;
-                    padding-left: 20px;
-                    font-size: 14px;
-                    font-family: "Lato";
-                    .footer-link-list {
-                        color: #ffffff;
-                        font-family: "Lato";
-                        font-size: 14px;
-                        text-decoration: none;
-                    }
-                }
-            }
-            .footer-links-container-2 {
-                padding-top: 38px;
-            }
-        }
-        .information-container {
-            height: 375px;
-            width: 371px;
-            background-color: #44af72;
-            margin: 100px 60px 0px 0px;
-            .card-container {
-                height: 240px;
-                width: 335px;
-                .contact-details {
-                    display: flex;
-                    flex-direction: row;
-                    height: 87px;
-                    width: 283px;
-                    .location {
-                        height: 24.38px;
-                        width: 26.83px;
-                        margin: 64px 0px 0px 20px;
-                    }
-                    .addDiv {
-                        .contact-heading {
-                            color: #ffffff;
-                            font-size: 18px;
-                            font-family: "Lato";
-                            font-weight: bold;
-                            position: relative;
-                            top: 20px;
-                            left: 20px;
-                        }
-                        .contact-Para {
-                            color: #ffffff;
-                            font-size: 14px;
-                            width: 235px;
-                            height: 61px;
-                            padding: 8px 0px 10px 20px;
-                        }
-                        .hr2 {
-                            position: relative;
-                            bottom: 20px;
-                            left: 20px;
-                            width: 252.25px;
-                        }
-                    }
-                }
-                .cellDiv {
-                    display: flex;
-                    flex-direction: row;
-                    margin-top: 0px;
-                    .phone {
-                        height: 26.38px;
-                        width: 20.83px;
-                        margin: 64px 0px 0px 20px;
-                    }
-                    .mobile-email-details {
-                        margin-top: 15px;
-                        .cell-email-heading {
-                            color: #ffffff;
-                            font-size: 18px;
-                            font-family: "Lato";
-                            font-weight: bold;
-                            position: relative;
-                            top: 20px;
-                            left: 20px;
-                        }
-                        .Cell-number {
-                            color: #ffffff;
-                            font-size: 14px;
-                            width: 235px;
-                            height: 61px;
-                            padding: 8px 0px 10px 20px;
-                        }
-                        .hr1 {
-                            position: relative;
-                            bottom: 50px;
-                            left: 20px;
-                            width: 252.25px;
-                        }
-                    }
-                }
-                .EmailDiv {
-                    display: flex;
-                    flex-direction: row;
-                    position: relative;
-                    bottom: 90px;
-                    .Email {
-                        height: 26.38px;
-                        width: 20.83px;
-                        margin: 64px 0px 0px 20px;
-                    }
-                    .mobile-email-details {
-                        margin-top: 15px;
-                        .cell-email-heading {
-                            color: #ffffff;
-                            font-size: 18px;
-                            font-family: "Lato";
-                            font-weight: bold;
-                            position: relative;
-                            top: 20px;
-                            left: 20px;
-                        }
-                        .Cell-number {
-                            color: #ffffff;
-                            font-size: 14px;
-                            width: 235px;
-                            height: 61px;
-                            padding: 8px 0px 10px 20px;
-                        }
-                    }
-                }
-            }
-            .followUsDiv {
-                display: flex;
-                flex-direction: row;
-                width: 310px;
-                height: 26.5px;
-                .fallow-head {
-                    color: #ffffff;
-                    font-weight: bold;
-                    font-family: "Lato";
-                    font-size: 18px;
-                    padding: 60px 0px 0px 20px;
-                }
-                .follow-line {
-                    color: #ffffff;
-                    font-size: 25px;
-                    padding-left: 20px;
-                    padding-top: 45px;
-                }
-                .followUs-image-container {
-                    margin-top: 57px;
-                    .followUsImg1 {
-                        height: 13px;
-                        width: 13px;
-                        position: relative;
-                        margin: 0px 0px 2px 11px;
-                    }
-                    .followUsImg2 {
-                        margin-left: 11px;
-                    }
-                }
-            }
-        }
-    }
-    .copyright-details {
-        display: flex;
-        flex-direction: row;
-        margin-top: 0px;
-        .copyright-text {
-            width: 477px;
-            height: 35px;
-            color: #ffffff;
-            position: relative;
-            bottom: 80px;
-            left: 80px;
-            font-size: 12px;
-            font-family: "lato";
-            font-weight: bold;
-        }
-        .powered-text {
-            height: 30px;
-            width: 107px;
-            font-size: 12px;
-            font-weight: bold;
-            font-family: "Lato";
-            color: #ffffff;
-            position: relative;
-            bottom: 50px;
-            left: 140px;
-        }
+.grass-image {
+    width: 100%;
+    @include flex-properties(flex, row);
+    margin-top: 84px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #1B7642;
+    height: 414px;
+}
+
+.footer__container {
+    max-width: 1125px;
+    width: 100%;
+    margin: 0 $auto;
+    padding: 0 15px;
+    left: 0;
+    right: 0;
+    @include flex-properties(flex, row);
+    justify-content: space-between;
+}
+
+.footer__links {
+    @include flex-properties(flex, column);
+    width: 720px;
+    margin: 25px 0 0 0;
+}
+
+.footer__subscribe {
+    position: $relative;
+    margin: 15px 0 25px 0;
+}
+
+.footer__subscribe-title {
+    font-size: 22px;
+    font-weight: $weight;
+    color: $color-white;
+    font-family: Lato;
+}
+
+.footer__subscribe-input {
+    width: 672px;
+    height: 46px;
+    background-color: #186a3b;
+    border-radius: 30px;
+    border-style: $none;
+    margin-top: 16px;
+    padding: 0 0 0 15px;
+}
+
+.footer__subscribe-button {
+    position: $absolute;
+    color: #393939;
+    background-color: $color-white;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 30px;
+    font-family: "Kunstler Script";
+    top: 46px;
+    right: 32px;
+    text-decoration: $none;
+}
+
+.footer__links-info {
+    @include flex-properties(flex, row);
+    margin: 0 0 70px 0;
+}
+
+.footer__links-about-us {
+    padding: 0 110px 0 0;
+    @include flex-properties(flex, column);
+}
+
+.footer_links-text {
+    text-decoration: $none;
+    color: $color-white;
+    font-size: 14px;
+    font-family: $family;
+}
+
+.footer_links-heading {
+    text-decoration: $none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    font-family: Lato;
+}
+
+.footer__links-empty-space {
+    height: 32px;
+}
+
+.footer__copyright {
+    @include flex-properties(flex, row);
+    justify-content: space-between;
+}
+
+.footer__copyright-section {
+    @include flex-properties(flex, column);
+}
+
+.footer__copyright-text {
+    color: $color-white;
+    font-size: 12px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.footer__copyright-rights-reserved {
+    color: $color-white;
+    font-size: 12px;
+    margin: 0;
+}
+
+.footer__copyright-powered {
+    color: $color-white;
+    font-size: 12px;
+    margin: 0;
+    font-weight: 700;
+    text-align: $end;
+}
+
+.footer__copyright-webworks {
+    color: $color-white;
+    font-size: 12px;
+    margin: 0;
+    text-align: $end;
+}
+
+.footer__card {
+    margin: 15px 0 0 0;
+    background-color: #1B6D3E;
+    padding: 34px;
+}
+
+.footer__contact-section {
+    @include flex-properties(flex, row);
+    align-items: $center;
+    margin: 0 0 17px 0;
+    &:nth-child(3) {
+        margin: 0 0 34px 0;
     }
 }
 
-.powered-span {
-    position: absolute;
-    bottom: 40px;
-    left: 35px;
+.footer__contact-information {
+    @include flex-properties(flex, column);
+    margin: 0 0 0 26px;
+    width: 250px;
+    border-bottom: 1px #488964 solid;
+}
+
+.footer__contact-heading {
+    font-size: 18px;
+    font-weight: 700;
+    color: $color-white;
+    text-decoration: $none;
+    margin: 0 0 5px 0;
+    font-family: $family;
+}
+
+.footer__contact-address {
+    font-size: 14px;
+    color: $color-white;
+    text-decoration: $none;
+    font-family: $family;
+    margin: 0 0 17px 0;
+}
+
+.footer__call-us {
+    font-size: 14px;
+    color: $color-white;
+    text-decoration: $none;
+    font-family: $family;
+    margin: 0 0 17px 0;
+}
+
+.footer__email-information {
+    @include flex-properties(flex, column);
+    margin: 0 0 0 16px;
+}
+
+.footer__email-text {
+    font-size: 14px;
+    color: $color-white;
+    text-decoration: $none;
+    font-family: $family;
+}
+
+.footer__follow-us {
+    @include flex-properties(flex, row);
+    align-items: $center;
+}
+
+.footer__follow-us-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: $color-white;
+    padding: 0 30px 0 0;
+    font-family: $family;
+    border-right: 1px #488964 solid;
+}
+
+.footer__follow-us-icons-section {
+    padding: 0 0 0 10px;
+}
+
+.footer__follow-icons {
+    color: $color-white;
+    padding: 0 0 0 20px;
 }

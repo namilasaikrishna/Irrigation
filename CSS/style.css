@@ -2,9 +2,6 @@ header {
   position: relative;
 }
 header .container {
-  max-width: 1125px;
-  width: 100%;
-  margin: 0 auto;
   padding: 0 15px;
   display: flex;
   flex-direction: row;
@@ -29,6 +26,7 @@ header .container__header-logo-image {
   font-size: 15px;
   color: #505050;
   font-weight: 900;
+  padding-left: 10px;
 }
 
 header .container__navbar {
@@ -152,7 +150,8 @@ header .container__search-image {
 }
 
 .container {
-  width: 1125px;
+  max-width: 1125px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -213,31 +212,31 @@ header .container__search-image {
 
 .manage-develop-section {
   position: relative;
-  margin-top: 136px !important;
-  padding: 0 0 0 85px !important;
+  margin-top: 130px !important;
   max-width: 1125px;
+  padding: 0 15px 0 60px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
-}
-.manage-develop-section .irrigation-image-section {
   display: flex;
   flex-direction: row;
 }
-.manage-develop-section .irrigation-image-section .manage-develop-main-text {
+.manage-develop-section .manage-develop-section__manage-develop-content {
+  width: 980px;
+}
+.manage-develop-section__manage-develop-main-text {
   font-family: "lato";
   font-size: 43px;
   color: #505050;
   margin: 0 0 0 0;
-  padding: 0 0 3px 120px;
+  padding: 0 0 3px 142px;
   font-weight: 900;
 }
-.manage-develop-section .irrigation-image-section .irrigation-image {
+.manage-develop-section__irrigation-title {
   margin: 0 0 0 0;
   font-size: 131px;
   font-weight: 900;
   padding: 0;
-  background-image: url(../images/banner);
+  background-image: url(../images/banner.png);
   font-family: sans-serif;
   color: transparent;
   line-height: 1;
@@ -246,365 +245,331 @@ header .container__search-image {
   background-size: cover;
   background-position: 22rem -11rem;
 }
-.manage-develop-section .irrigation-image-section .manage-develop-sub-text {
+.manage-develop-section__manage-develop-sub-text {
   font-family: "lato";
   font-size: 43px;
   color: #505050;
-  padding: 3px 0 0 380px;
-  margin: 0 0 0 0;
+  padding: 3px 0 0 0;
+  margin: 0;
+  text-align: end;
   font-weight: 900;
 }
-.manage-develop-section .irrigation-image-section .irrigation-logo-image {
+.manage-develop-section__irrigation-logo-image {
   position: absolute;
-  right: -15px;
+  right: 12px;
   top: 10px;
 }
 
-.services-section {
+.services {
   background-image: linear-gradient(to bottom, #ffffff, #f8f8f8);
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 121px 0 100px 100px;
+  padding: 162px 0 100px 0;
 }
-.services-section .service-items {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 0;
-  margin: 0;
-}
-.services-section .service-items .items {
-  text-align: center;
-  margin: 0 77px 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.services-section .service-items .logo {
-  height: 75px;
-  width: 75px;
-}
-.services-section .service-items .sprinkler-item {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin-right: 0;
-}
-.services-section .service-items .anchor-text {
+.services .services__text {
   width: 120px;
   font-family: "lato";
   font-size: 16px;
+  margin: 0 87px 0 0;
   color: #505050;
   text-decoration: none;
   font-weight: 900;
-  padding: 15px 0 0 0;
+  text-align: center;
+}
+.services__text:nth-child(5) {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+.services__logo {
+  height: 75px;
+  width: 75px;
+  margin: 0 0 20px 0;
 }
 
-.about-vidc-section {
+.about-us {
   position: relative;
-  margin: 20px 0 0 0;
   background-color: #3f3531;
   height: 521px;
 }
-.about-vidc-section .container {
+.about-us .about-us__bg-white-image {
+  width: 32%;
+  height: 100%;
+}
+.about-us .about-us__container {
   display: flex;
   justify-content: space-between;
   position: absolute;
   top: 90px;
+  right: 0;
   left: 0;
-  right: 145px;
+  max-width: 1125px;
+  width: 100%;
+  margin: 0 auto;
 }
-.about-vidc-section .container .nature-section {
+.about-us .about-us__container .about-us__nature-section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.about-us .about-us__container .about-us__play-button {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
 }
-.about-vidc-section .container .nature-section .play-button {
-  margin: 10px 440px 0 0;
+.about-us .about-us__container .about-us__content-section {
+  width: 393px;
 }
-.about-vidc-section .container .nature-section .about-vidc-main-heading {
+.about-us .about-us__container .about-us__content-section .about-us__main-heading {
   color: #ffffff;
   font-family: "Lato";
+  font-weight: 900;
   font-size: 36px;
-  width: 197px;
+  margin: 0;
 }
-.about-vidc-section .container .nature-section .about-vidc-text {
+.about-us .about-us__container .about-us__content-section .about-us__text {
   color: #ffffff;
   font-family: "Lato";
   font-size: 16px;
-  width: 393px;
+  margin: 15px 0 30px 0;
 }
-.about-vidc-section .container .nature-section .about-vidc-button {
+.about-us .about-us__container .about-us__content-section .about-us__button {
   background-color: #1b7642;
   padding: 7px 15px 7px 15px;
   color: #ffffff;
   font-size: 22px;
   font-family: "Lato";
   border-width: 0px;
+  text-decoration: none;
+  display: inline-block;
 }
 
-footer {
-  background-image: url("../images/footer-bg");
-  height: 512.35px;
-  width: 1280px;
-  background-size: cover;
-  margin-top: 80px;
-}
-footer .container {
+.grass-image {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  margin-top: 84px;
 }
-footer .container .footer-main-heading {
-  height: 27px;
-  width: 300px;
-  color: #ffffff;
-  font-size: 22px;
-  font-weight: bold;
-  font-family: "Lato";
-  padding: 120px 0px 0px 80px;
+
+.footer {
+  width: 100%;
+  background-color: #1B7642;
+  height: 414px;
 }
-footer .container .email-input {
-  height: 46px;
-  width: 571px;
-  padding-left: 80px;
-  display: inline;
-  color: #ffffff;
+
+.footer__container {
+  max-width: 1125px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-footer .container .input2 {
-  border-radius: 30px;
-  border-width: 0px;
-  height: 35px;
-  width: 550px;
-  color: #ffffff;
-  padding: 0px 0px 0px 15px;
-  border: 0px solid #707070;
-  background-color: #44af72;
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  width: 720px;
+  margin: 25px 0 0 0;
 }
-footer .container .subscribe-button {
-  color: #272727;
-  background-color: #ffffff;
-  border-radius: 20px;
-  border-width: 0px;
-  width: 191px;
-  height: 23px;
-  font-size: 16px;
-  font-family: "kunstler script";
+
+.footer__subscribe {
   position: relative;
-  left: 449px;
-  bottom: 29px;
+  margin: 15px 0 25px 0;
 }
-footer .container .footer-links-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 558px;
-  height: 180px;
-  margin-left: 20px;
-}
-footer .container .footer-links-container h2 {
+
+.footer__subscribe-title {
+  font-size: 22px;
+  font-weight: 900;
   color: #ffffff;
-  font-weight: bold;
-  font-family: "Lato";
-  font-size: 18px;
-  padding-left: 60px;
+  font-family: Lato;
 }
-footer .container .footer-links-container ul {
-  padding-bottom: 8px;
+
+.footer__subscribe-input {
+  width: 672px;
+  height: 46px;
+  background-color: #186a3b;
+  border-radius: 30px;
+  border-style: none;
+  margin-top: 16px;
+  padding: 0 0 0 15px;
 }
-footer .container .footer-links-container ul li {
-  list-style-type: none;
-  color: #ffffff;
-  padding-left: 20px;
-  font-size: 14px;
-  font-family: "Lato";
-}
-footer .container .footer-links-container ul li .footer-link-list {
-  color: #ffffff;
-  font-family: "Lato";
-  font-size: 14px;
+
+.footer__subscribe-button {
+  position: absolute;
+  color: #393939;
+  background-color: #ffffff;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 30px;
+  font-family: "Kunstler Script";
+  top: 46px;
+  right: 32px;
   text-decoration: none;
 }
-footer .container .footer-links-container .footer-links-container-2 {
-  padding-top: 38px;
-}
-footer .container .information-container {
-  height: 375px;
-  width: 371px;
-  background-color: #44af72;
-  margin: 100px 60px 0px 0px;
-}
-footer .container .information-container .card-container {
-  height: 240px;
-  width: 335px;
-}
-footer .container .information-container .card-container .contact-details {
+
+.footer__links-info {
   display: flex;
   flex-direction: row;
-  height: 87px;
-  width: 283px;
-}
-footer .container .information-container .card-container .contact-details .location {
-  height: 24.38px;
-  width: 26.83px;
-  margin: 64px 0px 0px 20px;
-}
-footer .container .information-container .card-container .contact-details .addDiv .contact-heading {
-  color: #ffffff;
-  font-size: 18px;
-  font-family: "Lato";
-  font-weight: bold;
-  position: relative;
-  top: 20px;
-  left: 20px;
-}
-footer .container .information-container .card-container .contact-details .addDiv .contact-Para {
-  color: #ffffff;
-  font-size: 14px;
-  width: 235px;
-  height: 61px;
-  padding: 8px 0px 10px 20px;
-}
-footer .container .information-container .card-container .contact-details .addDiv .hr2 {
-  position: relative;
-  bottom: 20px;
-  left: 20px;
-  width: 252.25px;
-}
-footer .container .information-container .card-container .cellDiv {
-  display: flex;
-  flex-direction: row;
-  margin-top: 0px;
-}
-footer .container .information-container .card-container .cellDiv .phone {
-  height: 26.38px;
-  width: 20.83px;
-  margin: 64px 0px 0px 20px;
-}
-footer .container .information-container .card-container .cellDiv .mobile-email-details {
-  margin-top: 15px;
-}
-footer .container .information-container .card-container .cellDiv .mobile-email-details .cell-email-heading {
-  color: #ffffff;
-  font-size: 18px;
-  font-family: "Lato";
-  font-weight: bold;
-  position: relative;
-  top: 20px;
-  left: 20px;
-}
-footer .container .information-container .card-container .cellDiv .mobile-email-details .Cell-number {
-  color: #ffffff;
-  font-size: 14px;
-  width: 235px;
-  height: 61px;
-  padding: 8px 0px 10px 20px;
-}
-footer .container .information-container .card-container .cellDiv .mobile-email-details .hr1 {
-  position: relative;
-  bottom: 50px;
-  left: 20px;
-  width: 252.25px;
-}
-footer .container .information-container .card-container .EmailDiv {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  bottom: 90px;
-}
-footer .container .information-container .card-container .EmailDiv .Email {
-  height: 26.38px;
-  width: 20.83px;
-  margin: 64px 0px 0px 20px;
-}
-footer .container .information-container .card-container .EmailDiv .mobile-email-details {
-  margin-top: 15px;
-}
-footer .container .information-container .card-container .EmailDiv .mobile-email-details .cell-email-heading {
-  color: #ffffff;
-  font-size: 18px;
-  font-family: "Lato";
-  font-weight: bold;
-  position: relative;
-  top: 20px;
-  left: 20px;
-}
-footer .container .information-container .card-container .EmailDiv .mobile-email-details .Cell-number {
-  color: #ffffff;
-  font-size: 14px;
-  width: 235px;
-  height: 61px;
-  padding: 8px 0px 10px 20px;
-}
-footer .container .information-container .followUsDiv {
-  display: flex;
-  flex-direction: row;
-  width: 310px;
-  height: 26.5px;
-}
-footer .container .information-container .followUsDiv .fallow-head {
-  color: #ffffff;
-  font-weight: bold;
-  font-family: "Lato";
-  font-size: 18px;
-  padding: 60px 0px 0px 20px;
-}
-footer .container .information-container .followUsDiv .follow-line {
-  color: #ffffff;
-  font-size: 25px;
-  padding-left: 20px;
-  padding-top: 45px;
-}
-footer .container .information-container .followUsDiv .followUs-image-container {
-  margin-top: 57px;
-}
-footer .container .information-container .followUsDiv .followUs-image-container .followUsImg1 {
-  height: 13px;
-  width: 13px;
-  position: relative;
-  margin: 0px 0px 2px 11px;
-}
-footer .container .information-container .followUsDiv .followUs-image-container .followUsImg2 {
-  margin-left: 11px;
-}
-footer .copyright-details {
-  display: flex;
-  flex-direction: row;
-  margin-top: 0px;
-}
-footer .copyright-details .copyright-text {
-  width: 477px;
-  height: 35px;
-  color: #ffffff;
-  position: relative;
-  bottom: 80px;
-  left: 80px;
-  font-size: 12px;
-  font-family: "lato";
-  font-weight: bold;
-}
-footer .copyright-details .powered-text {
-  height: 30px;
-  width: 107px;
-  font-size: 12px;
-  font-weight: bold;
-  font-family: "Lato";
-  color: #ffffff;
-  position: relative;
-  bottom: 50px;
-  left: 140px;
+  margin: 0 0 70px 0;
 }
 
-.powered-span {
-  position: absolute;
-  bottom: 40px;
-  left: 35px;
+.footer__links-about-us {
+  padding: 0 110px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_links-text {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "lato";
+}
+
+.footer_links-heading {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  font-family: Lato;
+}
+
+.footer__links-empty-space {
+  height: 32px;
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__copyright-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__copyright-text {
+  color: #ffffff;
+  font-size: 12px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.footer__copyright-rights-reserved {
+  color: #ffffff;
+  font-size: 12px;
+  margin: 0;
+}
+
+.footer__copyright-powered {
+  color: #ffffff;
+  font-size: 12px;
+  margin: 0;
+  font-weight: 700;
+  text-align: flex-end;
+}
+
+.footer__copyright-webworks {
+  color: #ffffff;
+  font-size: 12px;
+  margin: 0;
+  text-align: flex-end;
+}
+
+.footer__card {
+  margin: 15px 0 0 0;
+  background-color: #1B6D3E;
+  padding: 34px;
+}
+
+.footer__contact-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 17px 0;
+}
+.footer__contact-section:nth-child(3) {
+  margin: 0 0 34px 0;
+}
+
+.footer__contact-information {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 26px;
+  width: 250px;
+  border-bottom: 1px #488964 solid;
+}
+
+.footer__contact-heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 0 5px 0;
+  font-family: "lato";
+}
+
+.footer__contact-address {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "lato";
+  margin: 0 0 17px 0;
+}
+
+.footer__call-us {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "lato";
+  margin: 0 0 17px 0;
+}
+
+.footer__email-information {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 16px;
+}
+
+.footer__email-text {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "lato";
+}
+
+.footer__follow-us {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__follow-us-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 0 30px 0 0;
+  font-family: "lato";
+  border-right: 1px #488964 solid;
+}
+
+.footer__follow-us-icons-section {
+  padding: 0 0 0 10px;
+}
+
+.footer__follow-icons {
+  color: #ffffff;
+  padding: 0 0 0 20px;
 }
 
 body {

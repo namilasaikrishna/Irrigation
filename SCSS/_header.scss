@@ -1,9 +1,6 @@
 header {
     position: $relative;
     .container {
-        max-width: 1125px;
-        width: 100%;
-        margin: 0 $auto;
         padding: 0 15px;
         @include flex-properties($flex, $row-direction);
         justify-content: $space-between;
@@ -24,6 +21,7 @@ header {
                 font-size: 15px;
                 color: $color-dark;
                 font-weight: $weight;
+                padding-left: 10px;
             }
             &__navbar {
                 flex-direction: $column-direction;

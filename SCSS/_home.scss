@@ -1,5 +1,6 @@
 .container {
-    width: 1125px;
+    max-width: 1125px;
+    width: 100%;
     margin: 0 $auto;
 }
 
@@ -59,133 +60,134 @@
 
 .manage-develop-section {
     position: $relative;
-    margin-top: 136px !important;
-    padding: 0 0 0 85px !important;
+    margin-top: 130px !important;
     max-width: 1125px;
+    padding: 0 15px 0 60px;
     width: 100%;
     margin: 0 $auto;
-    padding: 0 15px;
-    .irrigation-image-section {
-        @include flex-properties($flex, $row-direction);
-        .manage-develop-main-text {
-            font-family: $family;
-            font-size: 43px;
-            color: $color-dark;
-            margin: 0 0 0 0;
-            padding: 0 0 3px 120px;
-            font-weight: $weight;
-        }
-        .irrigation-image {
-            margin: 0 0 0 0;
-            font-size: 131px;
-            font-weight: $weight;
-            padding: 0;
-            background-image: url(../images/banner);
-            font-family: $sansserif-family;
-            color: transparent;
-            line-height: 1;
-            -webkit-background-clip: text;
-            background-clip: text;
-            background-size: cover;
-            background-position: 22rem -11rem;
-        }
-        .manage-develop-sub-text {
-            font-family: $family;
-            font-size: 43px;
-            color: $color-dark;
-            padding: 3px 0 0 380px;
-            margin: 0 0 0 0;
-            font-weight: $weight;
-        }
-        .irrigation-logo-image {
-            position: $absolute;
-            right: -15px;
-            top: 10px;
-        }
+    @include flex-properties($flex, $row-direction);
+    .manage-develop-section__manage-develop-content {
+        width: 980px;
+    }
+    &__manage-develop-main-text {
+        font-family: $family;
+        font-size: 43px;
+        color: $color-dark;
+        margin: 0 0 0 0;
+        padding: 0 0 3px 142px;
+        font-weight: $weight;
+    }
+    &__irrigation-title {
+        margin: 0 0 0 0;
+        font-size: 131px;
+        font-weight: $weight;
+        padding: 0;
+        background-image: url(../images/banner.png);
+        font-family: $sansserif-family;
+        color: transparent;
+        line-height: 1;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-size: cover;
+        background-position: 22rem -11rem;
+    }
+    &__manage-develop-sub-text {
+        font-family: $family;
+        font-size: 43px;
+        color: $color-dark;
+        padding: 3px 0 0 0;
+        margin: 0;
+        text-align: end;
+        font-weight: $weight;
+    }
+    &__irrigation-logo-image {
+        position: $absolute;
+        right: 12px;
+        top: 10px;
     }
 }
 
-.services-section {
+.services {
     background-image: linear-gradient(to bottom, #ffffff, #f8f8f8);
     @include flex-properties($flex, $row-direction);
     justify-content: $center;
-    padding: 121px 0 100px 100px;
-    .service-items {
-        list-style-type: $none;
-        @include flex-properties($flex, $row-direction);
-        justify-content: $space-between;
-        align-items: $center;
-        padding-left: 0;
-        margin: 0;
-        .items {
-            text-align: $center;
-            margin: 0 77px 0 0;
-            @include flex-properties($flex, $column-direction);
-            justify-content: $space-between;
-        }
-        .logo {
-            height: 75px;
-            width: 75px;
-        }
-        .sprinkler-item {
-            text-align: $center;
-            @include flex-properties($flex, $column-direction);
-            margin-right: 0;
-        }
-        .anchor-text {
-            width: 120px;
-            font-family: $family;
-            font-size: 16px;
-            color: $color-dark;
-            text-decoration: $none;
-            font-weight: $weight;
-            padding: 15px 0 0 0;
-        }
+    padding: 162px 0 100px 0;
+    .services__text {
+        width: 120px;
+        font-family: $family;
+        font-size: 16px;
+        margin: 0 87px 0 0;
+        color: $color-dark;
+        text-decoration: $none;
+        font-weight: $weight;
+        text-align: $center;
+    }
+    &__text:nth-child(5) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    &__logo {
+        height: 75px;
+        width: 75px;
+        margin: 0 0 20px 0;
     }
 }
 
-.about-vidc-section {
+.about-us {
     position: relative;
-    margin: 20px 0 0 0;
     background-color: #3f3531;
     height: 521px;
-    .container {
+    .about-us__bg-white-image {
+        width: 32%;
+        height: 100%;
+    }
+    .about-us__container {
         display: flex;
         justify-content: space-between;
         position: absolute;
         top: 90px;
+        right: 0;
         left: 0;
-        right: 145px;
-        .nature-section {
+        max-width: 1125px;
+        width: 100%;
+        margin: 0 $auto;
+        .about-us__nature-section {
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        .about-us__play-button {
             position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 45px;
-            .play-button {
-                margin: 10px 440px 0 0;
-            }
-            .about-vidc-main-heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+            width: 80px;
+        }
+        .about-us__content-section {
+            width: 393px;
+            .about-us__main-heading {
                 color: #ffffff;
                 font-family: "Lato";
+                font-weight: $weight;
                 font-size: 36px;
-                width: 197px;
+                margin: 0;
             }
-            .about-vidc-text {
+            .about-us__text {
                 color: #ffffff;
                 font-family: "Lato";
                 font-size: 16px;
-                width: 393px;
+                margin: 15px 0 30px 0;
             }
-            .about-vidc-button {
+            .about-us__button {
                 background-color: #1b7642;
                 padding: 7px 15px 7px 15px;
                 color: #ffffff;
                 font-size: 22px;
                 font-family: "Lato";
                 border-width: 0px;
+                text-decoration: none;
+                display: inline-block;
             }
         }
     }
