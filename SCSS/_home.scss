@@ -66,9 +66,6 @@
     width: 100%;
     margin: 0 $auto;
     @include flex-properties($flex, $row-direction);
-    .manage-develop-section__manage-develop-content {
-        width: 980px;
-    }
     &__manage-develop-main-text {
         font-family: $family;
         font-size: 43px;
@@ -105,6 +102,9 @@
         right: 12px;
         top: 10px;
     }
+    &__manage-develop-content {
+        width: 980px;
+    }
 }
 
 .services {
@@ -112,16 +112,6 @@
     @include flex-properties($flex, $row-direction);
     justify-content: $center;
     padding: 162px 0 100px 0;
-    .services__text {
-        width: 120px;
-        font-family: $family;
-        font-size: 16px;
-        margin: 0 87px 0 0;
-        color: $color-dark;
-        text-decoration: $none;
-        font-weight: $weight;
-        text-align: $center;
-    }
     &__text:nth-child(5) {
         margin-right: 0;
         margin-bottom: 20px;
@@ -131,17 +121,27 @@
         width: 75px;
         margin: 0 0 20px 0;
     }
+    &__text {
+        width: 120px;
+        font-family: $family;
+        font-size: 16px;
+        margin: 0 87px 0 0;
+        color: $color-dark;
+        text-decoration: $none;
+        font-weight: $weight;
+        text-align: $center;
+    }
 }
 
 .about-us {
     position: relative;
     background-color: #3f3531;
     height: 521px;
-    .about-us__bg-white-image {
+    &__bg-white-image {
         width: 32%;
         height: 100%;
     }
-    .about-us__container {
+    &__container {
         display: flex;
         justify-content: space-between;
         position: absolute;
@@ -151,44 +151,44 @@
         max-width: 1125px;
         width: 100%;
         margin: 0 $auto;
-        .about-us__nature-section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .about-us__play-button {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 80px;
-            width: 80px;
-        }
-        .about-us__content-section {
-            width: 393px;
-            .about-us__main-heading {
-                color: #ffffff;
-                font-family: "Lato";
-                font-weight: $weight;
-                font-size: 36px;
-                margin: 0;
-            }
-            .about-us__text {
-                color: #ffffff;
-                font-family: "Lato";
-                font-size: 16px;
-                margin: 15px 0 30px 0;
-            }
-            .about-us__button {
-                background-color: #1b7642;
-                padding: 7px 15px 7px 15px;
-                color: #ffffff;
-                font-size: 22px;
-                font-family: "Lato";
-                border-width: 0px;
-                text-decoration: none;
-                display: inline-block;
-            }
-        }
+    }
+    &__nature-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__play-button {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        width: 80px;
+    }
+    &__button {
+        background-color: #1b7642;
+        padding: 7px 15px 7px 15px;
+        color: #ffffff;
+        font-size: 22px;
+        font-family: "Lato";
+        border-width: 0px;
+        text-decoration: none;
+        display: inline-block;
+    }
+    &__text {
+        color: #ffffff;
+        font-family: "Lato";
+        font-size: 16px;
+        margin: 15px 0 30px 0;
+    }
+    &__main-heading {
+        color: #ffffff;
+        font-family: "Lato";
+        font-weight: $weight;
+        font-size: 36px;
+        margin: 0;
+    }
+    &__content-section {
+        width: 393px;
     }
 }

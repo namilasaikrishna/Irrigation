@@ -15,12 +15,10 @@ header .container__header-logo-section {
   align-items: center;
   text-decoration: none;
 }
-
 header .container__header-logo-image {
   padding: 0 10px 0 0;
 }
-
-.header-logo-heading {
+header .container .header-logo-heading {
   width: 240px;
   font-family: "lato";
   font-size: 15px;
@@ -28,7 +26,6 @@ header .container__header-logo-image {
   font-weight: 900;
   padding-left: 10px;
 }
-
 header .container__navbar {
   flex-direction: column;
   align-items: center;
@@ -96,52 +93,46 @@ header .container__navbar .language {
   border-bottom: 0;
   padding: 0 10px 0 10px;
 }
-
 header .container__blue-circle, header .container__green-circle, header .container__yellow-circle {
   height: 15px;
   width: 15px;
   border-radius: 50%;
 }
-
 header .container__blue-circle {
   background-color: #265781;
   margin: 1px 0 0 10px;
 }
-
 header .container__green-circle {
   background-color: #52b27B;
   margin: 1px 0 0 10px;
 }
-
 header .container__yellow-circle {
   background-color: #F2e162;
   margin: 1px 0 0 10px;
 }
-
 header .container__search-image {
   margin: 0 0 0 10px;
   padding: 0 0 0 10px;
   border-left: 1px #265781 solid;
 }
-
-.navbar-bottom {
+header .container .navbar-bottom {
   display: flex;
   justify-content: flex-end;
 }
-.navbar-bottom .bottom-link-content-home {
+header .container .navbar-bottom .bottom-link-content-home {
   color: #505050;
   font-size: 14px;
   font-family: "lato";
   padding: 0 9px 0 0px;
 }
-.navbar-bottom .bottom-link-content {
+header .container .navbar-bottom .bottom-link-content {
   color: #505050;
   font-size: 14px;
   font-family: "lato";
   padding: 0px 9px 0px 9px;
   border-left: 1px #265781 solid;
 }
-.navbar-bottom .bottom-link-content-decisions {
+header .container .navbar-bottom .bottom-link-content-decisions {
   color: #505050;
   font-size: 14px;
   font-family: "lato";
@@ -220,9 +211,6 @@ header .container__search-image {
   display: flex;
   flex-direction: row;
 }
-.manage-develop-section .manage-develop-section__manage-develop-content {
-  width: 980px;
-}
 .manage-develop-section__manage-develop-main-text {
   font-family: "lato";
   font-size: 43px;
@@ -259,6 +247,9 @@ header .container__search-image {
   right: 12px;
   top: 10px;
 }
+.manage-develop-section__manage-develop-content {
+  width: 980px;
+}
 
 .services {
   background-image: linear-gradient(to bottom, #ffffff, #f8f8f8);
@@ -266,16 +257,6 @@ header .container__search-image {
   flex-direction: row;
   justify-content: center;
   padding: 162px 0 100px 0;
-}
-.services .services__text {
-  width: 120px;
-  font-family: "lato";
-  font-size: 16px;
-  margin: 0 87px 0 0;
-  color: #505050;
-  text-decoration: none;
-  font-weight: 900;
-  text-align: center;
 }
 .services__text:nth-child(5) {
   margin-right: 0;
@@ -286,17 +267,27 @@ header .container__search-image {
   width: 75px;
   margin: 0 0 20px 0;
 }
+.services__text {
+  width: 120px;
+  font-family: "lato";
+  font-size: 16px;
+  margin: 0 87px 0 0;
+  color: #505050;
+  text-decoration: none;
+  font-weight: 900;
+  text-align: center;
+}
 
 .about-us {
   position: relative;
   background-color: #3f3531;
   height: 521px;
 }
-.about-us .about-us__bg-white-image {
+.about-us__bg-white-image {
   width: 32%;
   height: 100%;
 }
-.about-us .about-us__container {
+.about-us__container {
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -307,12 +298,12 @@ header .container__search-image {
   width: 100%;
   margin: 0 auto;
 }
-.about-us .about-us__container .about-us__nature-section {
+.about-us__nature-section {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.about-us .about-us__container .about-us__play-button {
+.about-us__play-button {
   position: absolute;
   display: flex;
   align-items: center;
@@ -320,23 +311,7 @@ header .container__search-image {
   height: 80px;
   width: 80px;
 }
-.about-us .about-us__container .about-us__content-section {
-  width: 393px;
-}
-.about-us .about-us__container .about-us__content-section .about-us__main-heading {
-  color: #ffffff;
-  font-family: "Lato";
-  font-weight: 900;
-  font-size: 36px;
-  margin: 0;
-}
-.about-us .about-us__container .about-us__content-section .about-us__text {
-  color: #ffffff;
-  font-family: "Lato";
-  font-size: 16px;
-  margin: 15px 0 30px 0;
-}
-.about-us .about-us__container .about-us__content-section .about-us__button {
+.about-us__button {
   background-color: #1b7642;
   padding: 7px 15px 7px 15px;
   color: #ffffff;
@@ -345,6 +320,22 @@ header .container__search-image {
   border-width: 0px;
   text-decoration: none;
   display: inline-block;
+}
+.about-us__text {
+  color: #ffffff;
+  font-family: "Lato";
+  font-size: 16px;
+  margin: 15px 0 30px 0;
+}
+.about-us__main-heading {
+  color: #ffffff;
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 36px;
+  margin: 0;
+}
+.about-us__content-section {
+  width: 393px;
 }
 
 .grass-image {
