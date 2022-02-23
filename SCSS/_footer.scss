@@ -1,17 +1,15 @@
 .grass-image {
     width: 100%;
     display: block;
-    margin-top: 84px;
 }
 
 .footer {
-    background-color: #1B7642;
-    height: 416px;
+    background-color: $footer-background-color;
     &__container {
         max-width: 1125px;
         width: 100%;
-        margin: 0 $auto;
-        padding: 0 15px;
+        margin: 0 auto;
+        padding: 26px 15px 26px 15px;
         left: 0;
         right: 0;
         @include flex-properties(flex, row);
@@ -19,12 +17,11 @@
     }
     &__links {
         @include flex-properties(flex, column);
-        width: 720px;
-        margin: 25px 0 0 0;
+        margin-top: 35px;
     }
     &__subscribe {
-        position: $relative;
-        margin: 15px 0 25px 0;
+        position: relative;
+        margin: 0 0 25px 0;
     }
     &__subscribe-title {
         font-size: 22px;
@@ -36,119 +33,124 @@
         width: 672px;
         height: 46px;
         color: $color-white;
-        background-color: #186a3b;
+        background-color: $subscribe-input-color;
         border-radius: 30px;
-        border-style: $none;
-        margin-top: 16px;
+        border-style: none;
         padding: 0 0 0 15px;
+        &::placeholder {
+            color: $color-white;
+        }
     }
     &__subscribe-button {
-        position: $absolute;
-        color: #393939;
+        position: absolute;
+        color: $subscribe-button-color;
         background-color: $color-white;
         border-radius: 25px;
         font-size: 16px;
         font-weight: 700;
         padding: 10px 30px;
-        top: 46px;
-        right: 36px;
+        top: 30px;
+        right: 54px;
         border-style: none;
     }
     &__links-info {
         @include flex-properties(flex, row);
         margin: 0 0 70px 0;
     }
-    &__links-about-us {
+    &__about-us-list {
         padding: 0 110px 0 0;
         @include flex-properties(flex, column);
     }
-    &__links-text {
-        text-decoration: $none;
+    &__links-empty {
+        @include flex-properties(flex, column);
+        margin-top: 27px;
+    }
+    &__item,
+    &__last-item {
+        text-decoration: none;
         color: $color-white;
         font-size: 14px;
-        font-family: $family;
+        font-family: $primary-family;
     }
-    &__links-heading {
-        text-decoration: $none;
-        color: #ffffff;
+    &__item {
+        margin-bottom: 10px;
+    }
+    &__list-heading {
+        text-decoration: none;
+        color: $color-white;
         font-size: 18px;
-        font-weight: 700;
-        margin: 0 0 10px 0;
+        font-weight: $weight;
+        margin: 0 0 12px 0;
         font-family: Lato;
     }
-    &__links-empty-space {
-        height: 32px;
-    }
-    &__copyright {
+    &__copy-right {
         @include flex-properties(flex, row);
         justify-content: space-between;
     }
-    &__copyright-section {
+    &__copy-right-section {
         @include flex-properties(flex, column);
     }
-    &__copyright-text {
-        color: $color-white;
-        font-size: 12px;
-        margin: 0;
+    &__copy-right-text {
+        padding: 0 0 5px 0;
         font-weight: 700;
     }
-    &__copyright-rights-reserved {
+    &__copy-right-text,
+    &__copy-right-powered,
+    &__copy-right-rights-reserved,
+    &__copy-right-webworks {
         color: $color-white;
         font-size: 12px;
         margin: 0;
+        font-family: Lato;
     }
-    &__copyright-powered {
-        color: $color-white;
-        font-size: 12px;
-        margin: 0;
+    &__copy-right-powered {
+        padding: 0 0 5px 0;
         font-weight: 700;
-        text-align: $end;
+        text-align: end;
     }
-    &__copyright-webworks {
-        color: $color-white;
-        font-size: 12px;
-        margin: 0;
-        text-align: $end;
+    &__copy-right-webworks {
+        text-align: end;
     }
     &__card {
-        margin: 15px 0 0 0;
-        background-color: #1B6D3E;
+        background-color: $footer-card-bg-color;
         padding: 34px;
+        margin: 0 0 0 20px
     }
-    &__contact-section {
+    &__email-details,
+    &__contact-details {
         @include flex-properties(flex, row);
-        align-items: $center;
+        align-items: center;
         margin: 0 0 17px 0;
-        &:nth-child(3) {
-            margin: 0 0 34px 0;
-        }
+    }
+    &__email-details {
+        margin: 0 0 34px 0;
     }
     &__contact-information {
         @include flex-properties(flex, column);
         margin: 0 0 0 26px;
         width: 250px;
-        border-bottom: 1px #488964 solid;
+        border-bottom: 1px $follow-us-border-color solid;
     }
     &__contact-heading {
         font-size: 18px;
         font-weight: 700;
         color: $color-white;
-        text-decoration: $none;
+        text-decoration: none;
         margin: 0 0 5px 0;
-        font-family: $family;
+        font-family: $primary-family;
     }
-    &__contact-address {
+    &__contact-us {
         font-size: 14px;
         color: $color-white;
-        text-decoration: $none;
-        font-family: $family;
+        text-decoration: none;
+        font-family: $primary-family;
         margin: 0 0 17px 0;
     }
     &__call-us {
         font-size: 14px;
         color: $color-white;
-        text-decoration: $none;
-        font-family: $family;
+        text-decoration: none;
+        font-family: $primary-family;
         margin: 0 0 17px 0;
     }
     &__email-information {
@@ -158,25 +160,25 @@
     &__email-text {
         font-size: 14px;
         color: $color-white;
-        text-decoration: $none;
-        font-family: $family;
+        text-decoration: none;
+        font-family: $primary-family;
     }
     &__follow-us {
         @include flex-properties(flex, row);
-        align-items: $center;
+        align-items: center;
     }
-    &__follow-us-text {
+    &__follow-us-title {
         font-size: 18px;
         font-weight: 700;
         color: $color-white;
         padding: 0 30px 0 0;
-        font-family: $family;
-        border-right: 1px #488964 solid;
+        font-family: $primary-family;
+        border-right: 1px $follow-us-border-color solid;
     }
-    &__follow-us-icons-section {
+    &__follow-us-icons {
         padding: 0 0 0 10px;
     }
-    &__follow-icons {
+    &__icon {
         color: $color-white;
         padding: 0 0 0 20px;
     }

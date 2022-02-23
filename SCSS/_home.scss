@@ -1,7 +1,7 @@
 .container {
     max-width: 1125px;
     width: 100%;
-    margin: 0 $auto;
+    margin: 0 auto;
 }
 
 .banner-image {
@@ -9,18 +9,18 @@
 }
 
 .banner-section {
-    position: $relative;
+    position: relative;
     .banner-heading-section {
-        position: $absolute;
+        position: absolute;
         bottom: 90px;
         right: 0;
         left: 0;
-        @include flex-properties($flex, $column-direction);
-        justify-content: $space-between;
-        align-items: $start;
+        @include flex-properties(flex, column);
+        justify-content: space-between;
+        align-items: flex-start;
         .main-heading {
             background-color: $dark-green;
-            font-family: $family;
+            font-family: $primary-family;
             font-weight: $weight;
             color: $color-white;
             font-size: 57px;
@@ -29,7 +29,7 @@
         }
         .sub-heading {
             background-color: $dark-green;
-            font-family: $family;
+            font-family: $primary-family;
             font-weight: $weight;
             color: $color-white;
             font-size: 35px;
@@ -40,34 +40,34 @@
             background-color: $color-white;
             color: $color-balck;
             font-size: 22px;
-            font-family: $family;
-            text-decoration: $none;
+            font-family: $primary-family;
+            text-decoration: none;
             padding: 10px 20px 10px 20px;
             margin: 30px 0 0 0;
         }
     }
     .square-box {
-        display: $flex;
-        position: $absolute;
+        display: flex;
+        position: absolute;
         bottom: -30px;
         left: 0;
         right: 0;
-        margin: 0 $auto;
-        justify-content: $center;
-        align-items: $center;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 .manage-develop-section {
-    position: $relative;
+    position: relative;
     margin-top: 130px !important;
     max-width: 1125px;
     padding: 0 15px 0 60px;
     width: 100%;
-    margin: 0 $auto;
-    @include flex-properties($flex, $row-direction);
+    margin: 0 auto;
+    @include flex-properties(flex, row);
     &__manage-develop-main-text {
-        font-family: $family;
+        font-family: $primary-family;
         font-size: 43px;
         color: $color-dark;
         margin: 0 0 0 0;
@@ -79,7 +79,7 @@
         font-size: 131px;
         font-weight: $weight;
         padding: 0;
-        background-image: url(../images/banner.png);
+        background-image: url(#{$image-path}/banner.png);
         font-family: $sansserif-family;
         color: transparent;
         line-height: 1;
@@ -89,7 +89,7 @@
         background-position: 22rem -11rem;
     }
     &__manage-develop-sub-text {
-        font-family: $family;
+        font-family: $primary-family;
         font-size: 43px;
         color: $color-dark;
         padding: 3px 0 0 0;
@@ -98,7 +98,7 @@
         font-weight: $weight;
     }
     &__irrigation-logo-image {
-        position: $absolute;
+        position: absolute;
         right: 12px;
         top: 10px;
     }
@@ -108,9 +108,9 @@
 }
 
 .services {
-    background-image: linear-gradient(to bottom, #ffffff, #f8f8f8);
-    @include flex-properties($flex, $row-direction);
-    justify-content: $center;
+    background-image: linear-gradient(to bottom, $linear-gradient);
+    @include flex-properties(flex, row);
+    justify-content: center;
     padding: 162px 0 100px 0;
     &__text:nth-child(5) {
         margin-right: 0;
@@ -123,76 +123,95 @@
     }
     &__text {
         width: 120px;
-        font-family: $family;
+        font-family: $primary-family;
         font-size: 16px;
         margin: 0 87px 0 0;
         color: $color-dark;
-        text-decoration: $none;
+        text-decoration: none;
         font-weight: $weight;
-        text-align: $center;
+        text-align: center;
     }
 }
 
 .about-us {
-    position: $relative;
-    background-color: #3f3531;
-    height: 521px;
+    position: relative;
+    background-color: $about-us-bg-color;
+    margin-bottom: 84px;
     &__container {
         display: flex;
-        justify-content: space-around;
-        position: $absolute;
+        position: absolute;
         top: 90px;
         right: 0;
         left: 0;
         max-width: 1125px;
+        padding: 0 15px 0 15px;
         width: 100%;
-        margin: 0 $auto;
-        margin: 0 0 0 107px;
+        margin: 0 auto;
     }
-    &__nature-section {
+    &__video-section {
         display: flex;
-        justify-content: $center;
-        align-items: $center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 83px;
     }
-    &__play-button {
-        position: $absolute;
+    &__bg-button {
+        position: absolute;
         display: flex;
-        align-items: $center;
-        justify-content: $center;
+        align-items: center;
+        justify-content: center;
         height: 80px;
         width: 80px;
+        border: 2px $play-button-border-color solid;
+        border-radius: 50px;
+        &::after {
+            position: absolute;
+            background-color: $play-button-bg-color;
+            height: 70px;
+            width: 70px;
+            border-radius: 50px;
+            content: close-quote;
+        }
+    }
+    &__play-button {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     &__button {
-        background-color: #1b7642;
+        background-color: $footer-background-color;
         padding: 7px 15px 7px 15px;
-        color: #ffffff;
+        color: $color-white;
         font-size: 22px;
-        font-family: $family;
+        font-family: $primary-family;
         border-width: 0px;
         text-decoration: none;
         display: inline-block;
         &:hover {
-            color: blue;
+            transition: 1.5s;
+            background-color: $color-white;
+            color: $about-us-bg-color;
         }
     }
     &__text {
-        color: #ffffff;
-        font-family: $family;
+        color: $color-white;
+        font-family: $primary-family;
         font-size: 16px;
-        margin: 15px 0 30px 0;
+        margin: 0 0 33px 0;
     }
     &__main-heading {
-        color: #ffffff;
-        font-family: $family;
+        color: $color-white;
+        font-family: $primary-family;
         font-weight: $weight;
         font-size: 36px;
-        margin: 0;
+        margin: 0 0 27px 0;
     }
     &__content-section {
         width: 395px;
     }
     &__bg-white-image {
-        width: 30%;
-        height: 100%;
+        display: block;
+        width: 33%;
     }
 }

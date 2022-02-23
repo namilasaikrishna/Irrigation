@@ -40,7 +40,7 @@ header .container__navbar a {
 header .container__navbar .navbar-top {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: end;
   align-items: center;
   margin-bottom: 13px;
 }
@@ -117,7 +117,7 @@ header .container__search-image {
 }
 header .container .navbar-bottom {
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
 }
 header .container .navbar-bottom .bottom-link-content-home {
   color: #505050;
@@ -281,35 +281,52 @@ header .container .navbar-bottom .bottom-link-content-decisions {
 .about-us {
   position: relative;
   background-color: #3f3531;
-  height: 521px;
+  margin-bottom: 84px;
 }
 .about-us__container {
   display: flex;
-  justify-content: space-around;
   position: absolute;
   top: 90px;
   right: 0;
   left: 0;
   max-width: 1125px;
+  padding: 0 15px 0 15px;
   width: 100%;
   margin: 0 auto;
-  margin: 0 0 0 107px;
 }
-.about-us__nature-section {
+.about-us__video-section {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 83px;
 }
-.about-us__play-button {
+.about-us__bg-button {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 80px;
   width: 80px;
+  border: 2px #4fc172 solid;
+  border-radius: 50px;
+}
+.about-us__bg-button::after {
+  position: absolute;
+  background-color: #44AF72;
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  content: close-quote;
+}
+.about-us__play-button {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .about-us__button {
-  background-color: #1b7642;
+  background-color: #1B7642;
   padding: 7px 15px 7px 15px;
   color: #ffffff;
   font-size: 22px;
@@ -319,44 +336,44 @@ header .container .navbar-bottom .bottom-link-content-decisions {
   display: inline-block;
 }
 .about-us__button:hover {
-  color: blue;
+  transition: 1.5s;
+  background-color: #ffffff;
+  color: #3f3531;
 }
 .about-us__text {
   color: #ffffff;
   font-family: "lato";
   font-size: 16px;
-  margin: 15px 0 30px 0;
+  margin: 0 0 33px 0;
 }
 .about-us__main-heading {
   color: #ffffff;
   font-family: "lato";
   font-weight: 900;
   font-size: 36px;
-  margin: 0;
+  margin: 0 0 27px 0;
 }
 .about-us__content-section {
   width: 395px;
 }
 .about-us__bg-white-image {
-  width: 30%;
-  height: 100%;
+  display: block;
+  width: 33%;
 }
 
 .grass-image {
   width: 100%;
   display: block;
-  margin-top: 84px;
 }
 
 .footer {
   background-color: #1B7642;
-  height: 416px;
 }
 .footer__container {
   max-width: 1125px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 26px 15px 26px 15px;
   left: 0;
   right: 0;
   display: flex;
@@ -366,12 +383,11 @@ header .container .navbar-bottom .bottom-link-content-decisions {
 .footer__links {
   display: flex;
   flex-direction: column;
-  width: 720px;
-  margin: 25px 0 0 0;
+  margin-top: 35px;
 }
 .footer__subscribe {
   position: relative;
-  margin: 15px 0 25px 0;
+  margin: 0 0 25px 0;
 }
 .footer__subscribe-title {
   font-size: 22px;
@@ -386,8 +402,10 @@ header .container .navbar-bottom .bottom-link-content-decisions {
   background-color: #186a3b;
   border-radius: 30px;
   border-style: none;
-  margin-top: 16px;
   padding: 0 0 0 15px;
+}
+.footer__subscribe-input::placeholder {
+  color: #ffffff;
 }
 .footer__subscribe-button {
   position: absolute;
@@ -397,8 +415,8 @@ header .container .navbar-bottom .bottom-link-content-decisions {
   font-size: 16px;
   font-weight: 700;
   padding: 10px 30px;
-  top: 46px;
-  right: 36px;
+  top: 30px;
+  right: 54px;
   border-style: none;
 }
 .footer__links-info {
@@ -406,73 +424,72 @@ header .container .navbar-bottom .bottom-link-content-decisions {
   flex-direction: row;
   margin: 0 0 70px 0;
 }
-.footer__links-about-us {
+.footer__about-us-list {
   padding: 0 110px 0 0;
   display: flex;
   flex-direction: column;
 }
-.footer__links-text {
+.footer__links-empty {
+  display: flex;
+  flex-direction: column;
+  margin-top: 27px;
+}
+.footer__item, .footer__last-item {
   text-decoration: none;
   color: #ffffff;
   font-size: 14px;
   font-family: "lato";
 }
-.footer__links-heading {
+.footer__item {
+  margin-bottom: 10px;
+}
+.footer__list-heading {
   text-decoration: none;
   color: #ffffff;
   font-size: 18px;
-  font-weight: 700;
-  margin: 0 0 10px 0;
+  font-weight: 900;
+  margin: 0 0 12px 0;
   font-family: Lato;
 }
-.footer__links-empty-space {
-  height: 32px;
-}
-.footer__copyright {
+.footer__copy-right {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.footer__copyright-section {
+.footer__copy-right-section {
   display: flex;
   flex-direction: column;
 }
-.footer__copyright-text {
-  color: #ffffff;
-  font-size: 12px;
-  margin: 0;
+.footer__copy-right-text {
+  padding: 0 0 5px 0;
   font-weight: 700;
 }
-.footer__copyright-rights-reserved {
+.footer__copy-right-text, .footer__copy-right-powered, .footer__copy-right-rights-reserved, .footer__copy-right-webworks {
   color: #ffffff;
   font-size: 12px;
   margin: 0;
+  font-family: Lato;
 }
-.footer__copyright-powered {
-  color: #ffffff;
-  font-size: 12px;
-  margin: 0;
+.footer__copy-right-powered {
+  padding: 0 0 5px 0;
   font-weight: 700;
-  text-align: flex-end;
+  text-align: end;
 }
-.footer__copyright-webworks {
-  color: #ffffff;
-  font-size: 12px;
-  margin: 0;
-  text-align: flex-end;
+.footer__copy-right-webworks {
+  text-align: end;
 }
 .footer__card {
-  margin: 15px 0 0 0;
   background-color: #1B6D3E;
   padding: 34px;
+  margin: 0 0 0 20px;
 }
-.footer__contact-section {
+.footer__email-details, .footer__contact-details {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 0 0 17px 0;
 }
-.footer__contact-section:nth-child(3) {
+.footer__email-details {
   margin: 0 0 34px 0;
 }
 .footer__contact-information {
@@ -490,7 +507,7 @@ header .container .navbar-bottom .bottom-link-content-decisions {
   margin: 0 0 5px 0;
   font-family: "lato";
 }
-.footer__contact-address {
+.footer__contact-us {
   font-size: 14px;
   color: #ffffff;
   text-decoration: none;
@@ -520,7 +537,7 @@ header .container .navbar-bottom .bottom-link-content-decisions {
   flex-direction: row;
   align-items: center;
 }
-.footer__follow-us-text {
+.footer__follow-us-title {
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
@@ -528,10 +545,10 @@ header .container .navbar-bottom .bottom-link-content-decisions {
   font-family: "lato";
   border-right: 1px #488964 solid;
 }
-.footer__follow-us-icons-section {
+.footer__follow-us-icons {
   padding: 0 0 0 10px;
 }
-.footer__follow-icons {
+.footer__icon {
   color: #ffffff;
   padding: 0 0 0 20px;
 }
